@@ -572,17 +572,23 @@ body,.hero-bio,.cv-entry .d,.cv-xp,.sheet-paper,.dock a,.dock-work>a,.work-txt p
 .sheet-sec li::marker{color:var(--color-fg-2)}
 @media(max-width:767px){
  .sheet-scroll{padding-top:var(--space-8);padding-left:var(--gutter);padding-right:var(--gutter)}
- .sheet-head{row-gap:var(--space-2)}
+ .sheet-head{row-gap:var(--space-2);grid-template-columns:minmax(0,1fr) 96px;column-gap:16px;grid-template-areas:"name photo" "role photo" "tags tags" "contact contact"}
  .sheet-head .hero-tags,.sheet-head .sheet-contact{max-width:100%;flex-wrap:wrap}
- .sheet-head h2,.sheet-head>p:first-of-type{max-width:calc(100% - 112px)}
- .sheet-head .sheet-photo{width:96px}
+ .sheet-head h2,.sheet-head>p:first-of-type{max-width:100%}
+ .sheet-head .sheet-photo{grid-area:photo;position:static;width:96px}
  .sheet-head h2{font-size:32px}
  .sheet-sec,.sheet-paper .sheet-core{padding-top:var(--space-7)}
  .sheet-sec h3{font-size:24px}
  .sheet-row{align-items:flex-start;gap:var(--space-2)}
  .sheet-row h4{max-width:none}
 }
-@media(max-width:380px){.sheet-head h2,.sheet-head>p:first-of-type{max-width:calc(100% - 96px)}.sheet-head .sheet-photo{width:80px}}
+@media(max-width:560px){
+ .sheet-head .hero-tags{display:grid;grid-template-columns:repeat(3,max-content);justify-content:start}
+ .sheet-head .hero-tags li:nth-child(3){grid-column:1;grid-row:2}
+ .sheet-head .hero-tags li:nth-child(n+3){grid-row:2}
+ .sheet-paper[lang="en"] .sheet-head .hero-tags{display:flex;flex-wrap:wrap}
+}
+@media(max-width:380px){.sheet-head{grid-template-columns:minmax(0,1fr) 80px}.sheet-head .sheet-photo{width:80px}}
 /* 混排行：Young Serif 拉丁字形偏粗，混排时拉丁改用更细的系统衬线，中文仍走宋体 */
 .closing{font-family:var(--font-serif-mixed)}
 /* 作品标题（营销云 MAGIC Agent / 腾讯云 Mall / 企点商通 IM）同 .closing：拉丁走细衬线，中文仍走宋体 */
