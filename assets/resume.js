@@ -1,6 +1,6 @@
 /* 完整简历阅读层：正文与 2026-10-27 文字简历 PDF 同步。 */
 (function(){
-var PDF='assets/张耕-产品体验设计师-文字简历.pdf?v=20261028-pdf-baseline-v3';
+var PDF='assets/张耕-产品体验设计师-文字简历.pdf?v=20261102-core-capabilities-v3';
 var d=document.createElement('div');d.id='resume';d.className='sheet';d.setAttribute('role','dialog');d.setAttribute('aria-modal','true');d.setAttribute('aria-labelledby','rs-title');d.hidden=true;
 var resumeMarkup=`
   <header class="sheet-head">
@@ -11,9 +11,9 @@ var resumeMarkup=`
     <img class="sheet-photo" src="assets/resume-photo.jpg?v=20261028-v1" alt="张耕职业头像" width="600" height="600" loading="lazy" decoding="async">
   </header>
   <section class="sheet-sec sheet-core"><h3>核心能力</h3><ul>
-    <li><b>业务驱动与产品判断</b>：具备 10 年 B2B/B2C 产品体验设计经验，覆盖企业 SaaS、IM 与电商营销；通过访谈和场景分析识别问题，平衡用户、业务与技术约束，推动方案落地验证。</li>
-    <li><b>AI Agent 与人机协作体验</b>：具备企业级 AI Agent 设计实践，依据任务复杂度、意图清晰度与执行风险设计澄清、确认、状态反馈及结构化产物，兼顾效率与用户控制权。</li>
-    <li><b>设计体系与实现验证</b>：主导营销云 AI 设计体系，参与 TDesign 电商组件库共建；结构化设计规范、页面范式与知识资产，支持 AI Coding 规范化交付和可运行原型验证。</li>
+    <li><b>业务驱动与复杂产品设计</b>：具备企业 SaaS、B2B 行业 IM 与 B/C 端电商设计经验，擅长从业务目标和用户任务出发，梳理多角色、长流程及跨系统问题，平衡用户、业务与技术约束，推动方案落地验证。</li>
+    <li><b>AI-native 产品与人机协作</b>：具备企业级 AI Agent 产品设计实践，围绕核心任务与 AI 能力边界，设计意图澄清、计划确认、执行反馈和结构化产物等协作机制，推动 AI 能力融入真实业务流程，兼顾任务效率、可靠性与用户控制权。</li>
+    <li><b>设计系统与工程交付</b>：主导营销云 AI 设计体系建设，参与 TDesign 电商组件库共建；系统沉淀规范、组件与页面范式，结合 AI-ready 资产、AI Coding 和工程协作，推动规则复用与产品落地。</li>
   </ul></section>
   <section class="sheet-sec"><h3>工作经历</h3>
     <div class="sheet-row"><h4>腾讯｜CSIG｜产品体验设计师</h4><span>2021.04 – 至今</span></div>
@@ -50,9 +50,9 @@ var resumeMarkupEn=`
     <img class="sheet-photo" src="assets/resume-photo.jpg?v=20261028-v1" alt="Portrait of Geng Zhang" width="600" height="600" loading="lazy" decoding="async">
   </header>
   <section class="sheet-sec sheet-core"><h3>Core Capabilities</h3><ul>
-    <li><b>Business-driven Product Judgment</b>: 10 years of B2B and B2C product experience design across enterprise SaaS, IM, and e-commerce marketing. Identify problems through interviews and scenario analysis, balance user, business, and technical constraints, and validate solutions in practice.</li>
-    <li><b>AI Agent and Human-AI Collaboration</b>: Enterprise AI Agent design experience. Shape clarification, confirmation, status feedback, and structured outputs around task complexity, intent clarity, and execution risk—balancing efficiency with user control.</li>
-    <li><b>Design Systems and Implementation Validation</b>: Led the AI design system for Marketing Cloud and contributed to the TDesign e-commerce component library. Structured design guidelines, page patterns, and knowledge assets to support consistent AI-assisted delivery and runnable prototype validation.</li>
+    <li><b>Business-driven and Complex Product Design</b>: Experience designing enterprise SaaS, industry-specific B2B IM, and B2B/B2C e-commerce products. Start with business goals and user tasks to untangle problems involving multiple roles, long workflows, and interconnected systems. Balance user needs, business goals, and technical constraints to deliver and validate solutions.</li>
+    <li><b>AI-native Products and Human-AI Collaboration</b>: Experience designing enterprise AI Agent products. Design collaboration mechanisms around core tasks and the boundaries of AI capabilities, including intent clarification, plan confirmation, execution feedback, and structured outputs. Integrate AI into real business workflows while balancing task efficiency, reliability, and user control.</li>
+    <li><b>Design Systems and Engineering Delivery</b>: Led the Marketing Cloud AI design system and contributed to the TDesign e-commerce component library. Codify guidelines, components, and page patterns, combining AI-ready assets, AI Coding, and engineering collaboration to support reusable design rules and product delivery.</li>
   </ul></section>
   <section class="sheet-sec"><h3>Experience</h3>
     <div class="sheet-row"><h4>Tencent | CSIG | Product Experience Designer</h4><span>Apr 2021 – Present</span></div>
