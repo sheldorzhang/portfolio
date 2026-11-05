@@ -10,6 +10,9 @@ body.c1 .case-head .c1-subtitle{
   font-size:clamp(18px,2vw,26px);
   line-height:1.45;
 }
+body.c1 .next-case.c1-next-row{display:flex;justify-content:space-between;align-items:flex-start;gap:var(--space-8)}
+body.c1 .c1-next-row .c1-related{text-align:right}
+@media (max-width:720px){body.c1 .next-case.c1-next-row{flex-direction:column;gap:var(--space-6)}body.c1 .c1-next-row .c1-related{text-align:left}}
 body.c1 .c1-disclaimer{
   max-width:var(--c1-col);
   width:auto;
@@ -478,7 +481,7 @@ body.c1 .nav-mode[hidden],body.c1 .toc-mode[hidden]{display:none!important}
 </figure>
 <div class="wrap chap-body c1-subhead">
 <h3>2. 团队的 AI 设计工作流</h3>
-<p>产品、前端和设计都开始用 AI Coding 产出页面后，同一类页面出现了多种写法。我把组件规则、页面范式和使用方法整理成 AI 可读取的设计上下文与 Skill，用于页面生成和规范走查。设计师仍负责业务判断、设计取舍和规范维护，AI 按规范生成并检查。</p>
+<p>产品、前端和设计都开始用 AI Coding 产出页面后，同一类页面出现了多种写法。我把组件规则、页面范式和使用方法整理成 AI 可读取的设计上下文与 Skill，用于页面生成和规范走查。设计师仍负责业务判断、设计取舍和规范维护，AI 按规范生成并检查。后来我用 Vibe Coding 把这套做法做成了个人工具 Be4D，详见<a class="u" href="be4d.html">《Vibe Coding 的设计品味与规则》</a>。</p>
 </div>
 <figure class="fig fig-shared c1-explain-figure" aria-label="AI 友好设计体系的三层演进、五步协作流程与四类实践示例">
   <div class="c1-shift-hit">
@@ -503,7 +506,7 @@ body.c1 .nav-mode[hidden],body.c1 .toc-mode[hidden]{display:none!important}
 </div>
 </section>
 <p class="c1-disclaimer">演示场景中的品牌、人物与样例数据均已替换或使用示例；产品界面保留真实设计形态。商业数据统计范围为营销云产品线。</p>
-<div class="wrap next-case"><small>下一个案例</small><a href="case-03-deck.html">让通用 IM 支撑行业业务协作<svg class="icon icon-16" aria-hidden="true"><use href="#i-arrow-right"/></svg></a></div></div></main><script src="assets/main.js?v=20261028-case01-single-image-v5"></script><script src="assets/detail.js"></script><script src="assets/case-01-nav.js?v=20261026-unified-navigation"></script><script src="assets/resume.js?v=20261106-scrm04-10min-v1"></script><script src="assets/smooth.js"></script><script src="assets/embed.js?v=20261025-expand-fix-v1" defer></script><script src="assets/case-01-diagrams.js"></script><script>
+<div class="wrap next-case c1-next-row"><div class="c1-next"><small>下一个案例</small><a href="case-03-deck.html">让通用 IM 支撑行业业务协作<svg class="icon icon-16" aria-hidden="true"><use href="#i-arrow-right"/></svg></a></div><div class="c1-related"><small>相关构建</small><a href="be4d.html">Be4D：设计系统 AI-ready 改造<svg class="icon icon-16" aria-hidden="true"><use href="#i-arrow-right"/></svg></a></div></div></div></main><script src="assets/main.js?v=20261028-case01-single-image-v5"></script><script src="assets/detail.js"></script><script src="assets/case-01-nav.js?v=20261026-unified-navigation"></script><script src="assets/resume.js?v=20261106-scrm04-10min-v1"></script><script src="assets/smooth.js"></script><script src="assets/embed.js?v=20261025-expand-fix-v1" defer></script><script src="assets/case-01-diagrams.js"></script><script>
 /* 左上返回：直接回首页首屏，不打开菜单 */
 (function(){
   var back=document.querySelector('.nav-btn');
