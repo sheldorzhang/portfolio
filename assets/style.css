@@ -589,7 +589,7 @@ body,.hero-bio,.cv-entry .d,.cv-xp,.sheet-paper,.dock a,.dock-work>a,.work-txt p
 @media(max-width:380px){.sheet-head{grid-template-columns:minmax(0,1fr) 80px}.sheet-head .sheet-photo{width:80px}}
 /* 混排行：Young Serif 拉丁字形偏粗，混排时拉丁改用更细的系统衬线，中文仍走宋体 */
 .closing{font-family:var(--font-serif-mixed)}
-/* 作品标题（营销云 MAGIC Agent / 腾讯云 Mall / 企点商通 IM）同 .closing：拉丁走细衬线，中文仍走宋体 */
+/* 作品标题（营销云 MAGIC AI / 腾讯云 Mall / 企点商通 IM）同 .closing：拉丁走细衬线，中文仍走宋体 */
 .work-txt h3,.work-txt h3 a{font-family:var(--font-serif-mixed)}
 
 /* ===== 排版节奏修正 2026-10-13c（Cheer 已确认）===== */

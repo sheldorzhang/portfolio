@@ -1,6 +1,6 @@
 /* 完整简历阅读层：正文与下载 PDF 使用同一版中文内容。 */
 (function(){
-var PDF='assets/张耕-产品体验设计师-文字简历.pdf?v=20261105-business-data-v1';
+var PDF='assets/张耕-产品体验设计师-文字简历.pdf?v=20261106-replaced-pdf-v1';
 var d=document.createElement('div');d.id='resume';d.className='sheet';d.setAttribute('role','dialog');d.setAttribute('aria-modal','true');d.setAttribute('aria-labelledby','rs-title');d.hidden=true;
 var resumeMarkup=`
   <header class="sheet-head">
@@ -25,7 +25,7 @@ var resumeMarkup=`
   </section>
   <section class="sheet-sec"><h3>核心项目</h3>
     <div class="sheet-row"><h4>01｜腾讯企点营销云 MAGIC AI</h4><span>2024 – 至今</span></div>
-    <p>面向企业增长的 AI Agent 营销平台，负责 Agent 基础设定和任务协作体验，主导营销云 AI 设计体系。团队交付口径下，活动搭建从 2–3 天缩短到约 0.5 天，相关环节准确率 90%+；营销云产品线签约金额增速 +35%，KA 客户 160+ 家。</p>
+    <p>面向企业增长的 AI Agent 营销平台，负责 Agent 基础设定和任务协作体验，主导营销云 AI 设计体系。团队交付口径下，活动搭建从 2–3 天缩短到约 10 分钟，相关环节准确率 90%+；营销云产品线签约金额增速 +35%，KA 客户 160+ 家。</p>
     <ul><li><b>体验策略</b>：结合营销任务及其复杂度、意图清晰度与执行风险，设计内嵌式 AI、Copilot、Multi-Agent 三类模式；通过过程分层、问题澄清与计划确认，支持用户判断与决策。</li><li><b>设计系统与工作流</b>：针对多角色 AI Coding 产出质量不一，结构化设计规范、页面范式与知识库，沉淀 AI 可用资产与 Skill，完善生成、走查和迭代流程，推动跨角色规范化交付。</li></ul>
     <div class="sheet-row"><h4>02｜腾讯企点商通</h4><span>2023.04 – 至今</span></div>
     <p>基于 QQ B2B 生态的企业 IM，服务 800+ 金融机构、1.5 万+ 固收交易员。我负责 IM 客户端和行业应用的体验设计。电子采配报价时间从约 20 分钟缩短至 30 秒（上线实测），人均每日处理单证量提升至原来的 4 倍。</p>
@@ -33,8 +33,9 @@ var resumeMarkup=`
     <div class="sheet-row"><h4>03｜腾讯云 Mall / 鹅享团</h4><span>2021 – 2022</span></div>
     <p>零售电商 SaaS 和社群团购，服务沃尔玛等 KA 客户，打造 4+ 行业方案。后台操作效率提升 40%，营销链路转化率提升 28%，参与活动商家 GMV +20%；鹅享团上线 6 个月内 GMV 突破 200 万+，注册用户 60 万+。</p>
     <ul><li><b>商家端｜营销配置与运营效率</b>：围绕复杂营销规则与活动搭建成本，优化营销模板、批量操作、所见即所得配置及会员成长机制，降低商家运营负担。</li><li><b>消费端｜购买决策与交易转化</b>：优化商品、购物车及结算链路的优惠规则、适用条件与收益表达；结合微信社群场景设计团长开团、帮卖与参团流程，衔接营销参与、购买决策与交易转化。</li></ul>
+    <div class="sheet-row"><h4>04｜企点营销云 企微互动 SCRM</h4><span>2022</span></div>
+    <p>负责导购获客、客户运营和营销触达的跨端 MVP 设计。通过后台配置端与企微侧边栏的协同设计，配置效率提升 30%，MVP 获得 6+ 家客户付费验证。</p>
   </section>
-  <section class="sheet-sec"><h3>其他项目</h3><div class="sheet-row"><h4>企点营销云 企微互动 SCRM</h4><span>2022</span></div><p>负责导购获客、客户运营和营销触达的跨端 MVP 设计。通过后台配置端与企微侧边栏的协同设计，配置效率提升 30%，MVP 获得 6+ 家客户付费验证。</p></section>
   <section class="sheet-sec"><h3>实践与探索</h3><div class="sheet-row"><h4>Be4D｜设计系统 × AI Coding</h4></div><p>探索 AI Coding 前置设计约束的方法，将 Design Token、组件规范与交互范式应用于可运行原型，研究标准化复用与创造性探索的平衡。</p><div class="sheet-row"><h4>Intent UI｜意图驱动的生成式体验</h4></div><p>探索自然语言、动态表单与结构化产物的组合方式，构建 Generative UI 概念原型，研究用户意图变化下的动态界面与人机协作体验。</p></section>
   <section class="sheet-sec"><h3>技能与工具</h3><ul><li><b>研究与定义</b>：用户研究、复杂工作流、信息架构、用户旅程、服务蓝图、可用性测试。</li><li><b>AI 产品体验</b>：AI 产品设计、Chat / Copilot / Multi-Agent 选型、Human-in-the-loop、Generative UI。</li><li><b>设计系统与实现</b>：Design Systems、Design Tokens、Figma、TDesign、AI Coding（Cursor、Codex）；React、Next.js、Tailwind CSS（可运行原型与工程协作）。</li></ul></section>
   <section class="sheet-sec"><h3>荣誉与教育</h3><p>腾讯 OUTSTANDING CONTRIBUTOR｜2022 年上半年</p><p>成都理工大学｜工业设计｜本科（学士）｜2016</p></section>
@@ -62,7 +63,7 @@ var resumeMarkupEn=`
   </section>
   <section class="sheet-sec"><h3>Selected Projects</h3>
     <div class="sheet-row"><h4>01 | Tencent Qidian Marketing Cloud MAGIC AI</h4><span>2024 – Present</span></div>
-    <p>An AI Agent marketing platform for enterprise growth. Owned Agent foundational setup and task collaboration, and led the Marketing Cloud AI design system. Based on team delivery reporting, campaign setup time fell from 2–3 days to about half a day, with 90%+ accuracy in related steps. Marketing Cloud contract value grew by 35%, serving 160+ key accounts.</p>
+    <p>An AI Agent marketing platform for enterprise growth. Owned Agent foundational setup and task collaboration, and led the Marketing Cloud AI design system. Based on team delivery reporting, campaign setup time fell from 2–3 days to about 10 minutes, with 90%+ accuracy in related steps. Marketing Cloud contract value grew by 35%, serving 160+ key accounts.</p>
     <ul><li><b>Experience Strategy</b>: Designed embedded AI, Copilot, and Multi-Agent modes around marketing-task complexity, intent clarity, and execution risk. Used progressive process disclosure, clarification, and plan confirmation to support user judgment and decisions.</li><li><b>Design System and Workflow</b>: Addressed inconsistent AI coding outputs across roles by structuring design guidelines, page patterns, and a knowledge base. Created AI-ready assets and Skills, improved generation, review, and iteration workflows, and enabled consistent cross-functional delivery.</li></ul>
     <div class="sheet-row"><h4>02 | Tencent Qidian Merchant IM</h4><span>Apr 2023 – Present</span></div>
     <p>An enterprise IM built on QQ's B2B ecosystem, serving 800+ financial institutions and 15,000+ fixed-income traders. I designed the IM client and industry applications. In electronic procurement, quote turnaround fell from about 20 minutes to 30 seconds in live production, and daily document processing per employee increased to four times the previous level.</p>
@@ -70,8 +71,9 @@ var resumeMarkupEn=`
     <div class="sheet-row"><h4>03 | Tencent Cloud Mall / E-Xiang Tuan</h4><span>2021 – 2022</span></div>
     <p>Retail e-commerce SaaS and community group-buying products serving key accounts including Walmart, with 4+ industry solutions. Back-office task efficiency improved by 40%, marketing funnel conversion increased by 28%, and GMV among participating merchants grew by 20%+. Within six months of launch, E-Xiang Tuan exceeded RMB 2M GMV and reached 600K+ registered users.</p>
     <ul><li><b>Merchant Experience | Campaign Setup and Operations</b>: Simplified complex campaign rules and setup through reusable templates, bulk actions, WYSIWYG configuration, and membership-growth features—reducing merchants' operational workload.</li><li><b>Customer Experience | Purchase Decisions and Conversion</b>: Clarified promotions, eligibility, and savings across product, cart, and checkout flows. Designed group-leader launch, assisted-selling, and participation flows for WeChat communities, connecting campaign engagement to purchase and conversion.</li></ul>
+    <div class="sheet-row"><h4>04 | Qidian Marketing Cloud WeCom Engagement SCRM</h4><span>2022</span></div>
+    <p>Designed a cross-platform MVP for store-associate acquisition, customer operations, and marketing outreach. Coordinated the admin console and WeCom sidebar experiences to improve configuration efficiency by 30%; the MVP was validated through paid adoption by 6+ customers.</p>
   </section>
-  <section class="sheet-sec"><h3>Additional Project</h3><div class="sheet-row"><h4>Qidian Marketing Cloud | WeCom Engagement SCRM</h4><span>2022</span></div><p>Designed a cross-platform MVP for store-associate acquisition, customer operations, and marketing outreach. Coordinated the admin console and WeCom sidebar experiences to improve configuration efficiency by 30%; the MVP was validated through paid adoption by 6+ customers.</p></section>
   <section class="sheet-sec"><h3>Practice and Exploration</h3><div class="sheet-row"><h4>Be4D | Design Systems × AI Coding</h4></div><p>Explored how to bring design constraints earlier into AI coding by applying Design Tokens, component guidelines, and interaction patterns to runnable prototypes—balancing standardization and creative exploration.</p><div class="sheet-row"><h4>Intent UI | Intent-driven Generative Experiences</h4></div><p>Explored combinations of natural language, dynamic forms, and structured outputs through a Generative UI concept prototype, studying adaptive interfaces and human-AI collaboration as user intent changes.</p></section>
   <section class="sheet-sec"><h3>Skills and Tools</h3><ul><li><b>Research and Definition</b>: User research, complex workflows, information architecture, user journeys, service blueprint, usability testing.</li><li><b>AI Product Experience</b>: AI product design, Chat / Copilot / Multi-Agent selection, human-in-the-loop, Generative UI.</li><li><b>Design Systems and Implementation</b>: Design systems, design tokens, Figma, TDesign, AI coding (Cursor, Codex); React, Next.js, and Tailwind CSS for runnable prototypes and engineering collaboration.</li></ul></section>
   <section class="sheet-sec"><h3>Recognition and Education</h3><p>Tencent Outstanding Contributor | H1 2022</p><p>Chengdu University of Technology | Industrial Design | Bachelor's Degree | 2016</p></section>

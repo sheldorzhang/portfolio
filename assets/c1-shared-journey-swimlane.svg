@@ -3,7 +3,7 @@
   <desc id="desc">营销活动从目标设定、人货模型、画布配置、活动上线到回收复盘，跨品牌运营、数据算法、代理团队和知识库协同；运营还需确认配置与上线交接。图下列出五类现状痛点。</desc>
   <rect width="1920" height="1120" fill="#fafafa"/>
   <g font-family="-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif" fill="#202124">
-    <text x="96" y="92" font-size="24" font-weight="600" fill="#5b57ee">用户体验地图 · 现状泳道</text>
+    <text x="96" y="92" font-size="24" font-weight="600" fill="#5b57ee">用户体验地图：现状泳道</text>
     <text x="96" y="150" font-size="42" font-weight="700">一场大促，需要 3 个角色 × 5 个阶段协同</text>
     <text x="96" y="193" font-size="24" fill="#62646b">从目标设定到效果复盘，运营需持续确认跨角色交接；知识与规范分散在各阶段</text>
 
@@ -43,29 +43,29 @@
 
     <!-- Operator -->
     <g font-size="21">
-      <text x="422" y="377" font-size="16" font-weight="600" fill="#5b57ee">STEP 1</text><text x="422" y="411" font-weight="650">确定活动主题 / 目标</text><text x="422" y="444" fill="#595b62">活动商品 · 活动优惠</text>
-      <text x="726" y="377" font-size="16" font-weight="600" fill="#5b57ee">STEP 2</text><text x="726" y="411" font-weight="650">下发需求清单</text><text x="726" y="444" fill="#595b62">人群包要求 · 活动商品</text>
+      <text x="422" y="377" font-size="16" font-weight="600" fill="#5b57ee">STEP 1</text><text x="422" y="411" font-weight="650">确定活动主题 / 目标</text><text x="422" y="444" fill="#595b62">活动商品、活动优惠</text>
+      <text x="726" y="377" font-size="16" font-weight="600" fill="#5b57ee">STEP 2</text><text x="726" y="411" font-weight="650">下发需求清单</text><text x="726" y="444" fill="#595b62">人群包要求、活动商品</text>
       <text x="1030" y="377" font-size="16" font-weight="600" fill="#5b57ee">需确认</text><text x="1030" y="411" font-weight="650">画布与文案</text>
       <text x="1334" y="377" font-size="16" font-weight="600" fill="#5b57ee">需确认</text><text x="1334" y="411" font-weight="650">上线配置</text>
-      <text x="1638" y="377" font-size="16" font-weight="600" fill="#5b57ee">STEP 5</text><text x="1638" y="411" font-size="18" font-weight="650">数据回收 / 复盘</text><text x="1638" y="444" font-size="18" fill="#595b62">汇报结论 · 经验沉淀</text>
+      <text x="1638" y="377" font-size="16" font-weight="600" fill="#5b57ee">STEP 5</text><text x="1638" y="411" font-size="18" font-weight="650">数据回收 / 复盘</text><text x="1638" y="444" font-size="18" fill="#595b62">汇报结论、经验沉淀</text>
     </g>
     <!-- Algorithm -->
     <g font-size="21">
-      <text x="726" y="525" font-size="16" font-weight="600" fill="#5b57ee">STEP 2</text><text x="726" y="559" font-weight="650">人货模型计算</text><text x="726" y="592" fill="#595b62">高意向人群 · 人货匹配</text>
-      <text x="1030" y="525" font-size="16" font-weight="600" fill="#5b57ee">输出</text><text x="1030" y="559" font-weight="650">存储到 CDP</text><text x="1030" y="592" fill="#595b62">人群包 · 商品包</text>
+      <text x="726" y="525" font-size="16" font-weight="600" fill="#5b57ee">STEP 2</text><text x="726" y="559" font-weight="650">人货模型计算</text><text x="726" y="592" fill="#595b62">高意向人群、人货匹配</text>
+      <text x="1030" y="525" font-size="16" font-weight="600" fill="#5b57ee">输出</text><text x="1030" y="559" font-weight="650">存储到 CDP</text><text x="1030" y="592" fill="#595b62">人群包、商品包</text>
     </g>
     <!-- Agency -->
     <g font-size="21">
-      <text x="1030" y="673" font-size="16" font-weight="600" fill="#5b57ee">STEP 3</text><text x="1030" y="707" font-weight="650">配置画布 + 文案</text><text x="1030" y="740" fill="#595b62">人群 · 触达 · 模板</text>
-      <text x="1334" y="673" font-size="16" font-weight="600" fill="#5b57ee">STEP 4</text><text x="1334" y="707" font-weight="650">活动上线</text><text x="1334" y="740" fill="#595b62">短信 · 彩信 · PUSH</text>
+      <text x="1030" y="673" font-size="16" font-weight="600" fill="#5b57ee">STEP 3</text><text x="1030" y="707" font-weight="650">配置画布 + 文案</text><text x="1030" y="740" fill="#595b62">人群、触达、模板</text>
+      <text x="1334" y="673" font-size="16" font-weight="600" fill="#5b57ee">STEP 4</text><text x="1334" y="707" font-weight="650">活动上线</text><text x="1334" y="740" fill="#595b62">短信、彩信、PUSH</text>
     </g>
     <!-- Knowledge -->
     <g font-size="20">
-      <text x="422" y="825" font-weight="650">活动模板 / 规范</text><text x="422" y="862" fill="#595b62">SOP · 历史经验</text>
+      <text x="422" y="825" font-weight="650">活动模板 / 规范</text><text x="422" y="862" fill="#595b62">SOP、历史经验</text>
       <text x="726" y="825" font-weight="650">商品池 / 人群标签</text><text x="726" y="862" fill="#595b62">CDP 标签体系</text>
       <text x="1030" y="825" font-weight="650">画布技能 / 模板</text><text x="1030" y="862" fill="#595b62">营销云能力</text>
       <text x="1334" y="825" font-weight="650">触达通道资源</text><text x="1334" y="862" fill="#595b62">短信 / 彩信额度</text>
-      <text x="1638" y="825" font-weight="650">数据治理规范</text><text x="1638" y="862" fill="#595b62">归因 · 报表</text>
+      <text x="1638" y="825" font-weight="650">数据治理规范</text><text x="1638" y="862" fill="#595b62">归因、报表</text>
     </g>
     <g font-size="17" fill="#a0a1a6" text-anchor="middle">
       <text x="546" y="562">—</text><text x="1154" y="562">—</text><text x="1460" y="562">—</text><text x="1720" y="562">—</text>
