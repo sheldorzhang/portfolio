@@ -583,10 +583,8 @@ body,.hero-bio,.cv-entry .d,.cv-xp,.sheet-paper,.dock a,.dock-work>a,.work-txt p
  .sheet-row h4{max-width:none}
 }
 @media(max-width:560px){
- .sheet-head .hero-tags{display:grid;grid-template-columns:repeat(3,max-content);justify-content:start}
- .sheet-head .hero-tags li:nth-child(3){grid-column:1;grid-row:2}
- .sheet-head .hero-tags li:nth-child(n+3){grid-row:2}
- .sheet-paper[lang="en"] .sheet-head .hero-tags{display:flex;flex-wrap:wrap}
+ .sheet-head .hero-tags{display:flex;flex-wrap:wrap;justify-content:flex-start;align-self:start;width:max-content;max-width:100%}
+ .sheet-head .hero-tags li{flex:0 0 auto}
 }
 @media(max-width:380px){.sheet-head{grid-template-columns:minmax(0,1fr) 80px}.sheet-head .sheet-photo{width:80px}}
 /* 混排行：Young Serif 拉丁字形偏粗，混排时拉丁改用更细的系统衬线，中文仍走宋体 */

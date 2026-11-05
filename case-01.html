@@ -158,6 +158,8 @@ body.c1 .c1-iter figcaption{margin-top:8px;color:#5f6672;font-size:12px;line-hei
 body.c1 .c1-iter figcaption b{display:block;margin-bottom:2px;color:#171717;font-weight:500;font-size:13px}
 body.c1 .c1-insight p,body.c1 .c1-goal p{margin:6px 0 0;color:#5f6672;font-size:12px;line-height:1.55}
 body.c1 .c1-goal-grid{gap:12px;margin:16px 0 0;border:0}
+body.c1 .c1-discovery-list,body.c1 .c1-evidence-list{margin:8px 0 20px;padding-left:1.25em;font-size:var(--fs-body);line-height:var(--lh-read)}
+body.c1 .c1-discovery-list li+li,body.c1 .c1-evidence-list li+li{margin-top:8px}
 body.c1 .c1-goal{padding:18px 20px;border:0;border-radius:10px;background:#fafafa}
 body.c1 .c1-strategy-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;margin-top:12px;border:0;border-radius:10px;background:#fafafa}
 body.c1 .c1-strategy-grid>div{position:relative;padding:18px 22px 20px;border-right:0}
@@ -233,6 +235,8 @@ body.detail.c1 .toc{
 body.detail.c1 .toc-list{display:flex;flex-direction:column;gap:var(--space-1)}
 body.detail.c1 .toc-list a{min-height:40px;align-items:center;padding:10px 0}
 body.detail.c1 .toc-mode{min-height:var(--size-touch);margin-top:var(--space-5);flex-shrink:0}
+/* The Case 1 deck is still being revised; keep both public entry points hidden. */
+body.c1 .nav-mode[hidden],body.c1 .toc-mode[hidden]{display:none!important}
 @media(min-width:1440px){
   body.detail.c1 .toc-mode{column-gap:var(--space-3)}
 }
@@ -263,18 +267,18 @@ body.detail.c1 .toc-mode{min-height:var(--size-touch);margin-top:var(--space-5);
 </style><script>document.documentElement.className="js"</script></head><body class="detail c1" data-slides-href="case-01-deck.html"><!-- icons: Lucide v1.55.0 (ISC) · assets/icons/LICENSE-lucide.txt --><svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true"><symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7" /> <path d="M19 12H5" /></symbol><symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></symbol><symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 7h10v10" /> <path d="M7 17 17 7" /></symbol><symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" /></symbol><symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18" /> <path d="m6 6 12 12" /></symbol><symbol id="i-layout-grid" viewBox="0 0 24 24"><rect width="7" height="7" x="3" y="3" rx="1" /> <rect width="7" height="7" x="14" y="3" rx="1" /> <rect width="7" height="7" x="14" y="14" rx="1" /> <rect width="7" height="7" x="3" y="14" rx="1" /></symbol><symbol id="i-play" viewBox="0 0 24 24"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z" /></symbol><symbol id="i-list" viewBox="0 0 24 24"><path d="M3 5h.01" /> <path d="M3 12h.01" /> <path d="M3 19h.01" /> <path d="M8 5h13" /> <path d="M8 12h13" /> <path d="M8 19h13" /></symbol><symbol id="i-move-horizontal" viewBox="0 0 24 24"><path d="m18 8 4 4-4 4" /> <path d="M2 12h20" /> <path d="m6 8-4 4 4 4" /></symbol><symbol id="i-folder" viewBox="0 0 24 24"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z" /></symbol><symbol id="i-pen-line" viewBox="0 0 24 24"><path d="M13 21h8" /> <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" /></symbol><symbol id="i-file-text" viewBox="0 0 24 24"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /> <path d="M14 2v5a1 1 0 0 0 1 1h5" /> <path d="M10 9H8" /> <path d="M16 13H8" /> <path d="M16 17H8" /></symbol><symbol id="i-mail" viewBox="0 0 24 24"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /> <rect x="2" y="4" width="20" height="16" rx="2" /></symbol><symbol id="i-message-circle" viewBox="0 0 24 24"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></symbol><symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /></symbol><symbol id="i-download" viewBox="0 0 24 24"><path d="M12 15V3" /> <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /> <path d="m7 10 5 5 5-5" /></symbol></svg>
 <!-- 统一详情模板：平铺叙事 + 图集幻灯片（detail.js）；演示版见 case-01-deck.html -->
 
-<nav class="nav" id="nav" data-mode="detail" aria-label="案例导航"><button class="nav-btn" type="button" aria-label="返回首页"><span class="nav-icon" aria-hidden="true"><svg class="icon" aria-hidden="true"><use href="#i-arrow-left"/></svg></span><span class="vh"><span class="nav-name">概览</span> <span class="nav-pct">0%</span></span></button><div class="nav-panel" role="menu"><a class="nav-home" href="index.html"><svg class="icon icon-16" aria-hidden="true"><use href="#i-arrow-left"/></svg>返回首页</a><div class="nav-head">章节</div><div class="nav-menu"></div><button class="nav-mode" aria-pressed="false"><svg class="icon icon-16 i-off" aria-hidden="true"><use href="#i-play"/></svg><svg class="icon icon-16 i-on" aria-hidden="true"><use href="#i-list"/></svg><span class="nav-mode-t">幻灯片</span></button><button class="nav-mode nav-resume" type="button" data-resume><svg class="icon icon-16" aria-hidden="true"><use href="#i-file-text"/></svg>完整简历</button><a class="nav-mode nav-contact" href="index.html#contact"><svg class="icon icon-16" aria-hidden="true"><use href="#i-mail"/></svg>联系</a></div></nav><div class="c1-mobile-bar"><button class="c1-menu-toggle" type="button" aria-label="打开章节目录" aria-expanded="false" aria-controls="c1-article-toc"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h.01M3 12h.01M3 19h.01M8 5h13M8 12h13M8 19h13"/></svg></button><p class="c1-nav-title" aria-hidden="true"></p></div><main class="case"><aside class="toc" id="c1-article-toc" aria-label="目录"><div class="toc-h">目录</div><nav class="toc-list"></nav><button class="toc-mode" type="button" aria-label="幻灯片浏览"><svg class="icon icon-16" aria-hidden="true"><use href="#i-play"/></svg><span>幻灯片</span></button></aside><div class="case-main"><header class="wrap case-head"><div><h1>腾讯企点营销云 MAGIC AI</h1><p class="c1-subtitle">从功能驱动到意图驱动，探索 Agent-first 的交互体验范式</p><div class="case-meta"><dl><dt>产品</dt><dd>腾讯企点营销云 MAGIC AI —— 面向企业增长的 AI 原生营销智能体平台</dd><dt>角色</dt><dd>负责 Agent 基础配置与任务协作体验，主导营销云 AI 设计体系建设及 AI-ready 工作流升级。</dd><dt>时间</dt><dd>2024 — 至今</dd><dt>关键词</dt><dd>AI 产品体验设计 / 意图驱动 / Agent-first / Multi-Agent / HITL（人在回路）</dd></dl></div></div></header>
+<nav class="nav" id="nav" data-mode="detail" aria-label="案例导航"><button class="nav-btn" type="button" aria-label="返回首页"><span class="nav-icon" aria-hidden="true"><svg class="icon" aria-hidden="true"><use href="#i-arrow-left"/></svg></span><span class="vh"><span class="nav-name">概览</span> <span class="nav-pct">0%</span></span></button><div class="nav-panel" role="menu"><a class="nav-home" href="index.html"><svg class="icon icon-16" aria-hidden="true"><use href="#i-arrow-left"/></svg>返回首页</a><div class="nav-head">章节</div><div class="nav-menu"></div><button class="nav-mode" aria-pressed="false" hidden><svg class="icon icon-16 i-off" aria-hidden="true"><use href="#i-play"/></svg><svg class="icon icon-16 i-on" aria-hidden="true"><use href="#i-list"/></svg><span class="nav-mode-t">幻灯片</span></button><button class="nav-mode nav-resume" type="button" data-resume><svg class="icon icon-16" aria-hidden="true"><use href="#i-file-text"/></svg>完整简历</button><a class="nav-mode nav-contact" href="index.html#contact"><svg class="icon icon-16" aria-hidden="true"><use href="#i-mail"/></svg>联系</a></div></nav><div class="c1-mobile-bar"><button class="c1-menu-toggle" type="button" aria-label="打开章节目录" aria-expanded="false" aria-controls="c1-article-toc"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h.01M3 12h.01M3 19h.01M8 5h13M8 12h13M8 19h13"/></svg></button><p class="c1-nav-title" aria-hidden="true"></p></div><main class="case"><aside class="toc" id="c1-article-toc" aria-label="目录"><div class="toc-h">目录</div><nav class="toc-list"></nav><button class="toc-mode" type="button" hidden aria-label="幻灯片浏览"><svg class="icon icon-16" aria-hidden="true"><use href="#i-play"/></svg><span>幻灯片</span></button></aside><div class="case-main"><header class="wrap case-head"><div><h1>腾讯企点营销云 MAGIC AI</h1><p class="c1-subtitle">从功能驱动到意图驱动，设计 Agent-first 的产品体验方式</p><div class="case-meta"><dl><dt>产品</dt><dd>腾讯企点营销云 MAGIC AI，面向企业增长的 AI Agent 营销平台</dd><dt>角色</dt><dd>负责 Agent 基础配置和任务协作体验（任务发起、执行过程、结果确认）；主导营销云 AI 设计体系建设及 AI-ready 工作流升级。</dd><dt>时间</dt><dd>2024 — 至今</dd><dt>关键词</dt><dd>AI Agent 体验 / Multi-Agent / Human-in-the-loop</dd></dl></div></div></header>
 
 <section class="chap" id="intro" data-chapter="intro" data-nav="产品与体验"><div class="wrap chap-head"><div><p class="c1-chapter-label">01 产品与体验</p><h2>MAGIC AI：把分散的营销能力组织成完整增长任务</h2></div><div class="txt">
-<p><b>从营销工具集合，到智能增长操作系统。</b> 企业通常并不缺少营销工具，真正困难的是如何把分散的数据、策略、知识和执行能力持续组织起来，形成可以重复使用的增长能力。</p>
-<p>先从一场秋冬换季沉默会员召回活动，看看 Agent 如何把增长目标变成可执行方案。</p>
+<p>企业已经有人群圈选、旅程编排、内容生成、企微触达这些营销工具，但做一场活动，仍要运营自己在多个模块之间把目标、人群和规则串起来。MAGIC AI 让运营直接提出增长目标，由 Agent 拆解步骤并调用这些工具执行。</p>
+<p>下面用一场“秋冬换季沉默会员召回”活动演示完整流程。</p>
 </div></div>
 <figure class="fig block" data-embed-src="demos/magic-task-replay/index.html">
   <button class="embed-cover c1-demo-cover" type="button" aria-label="立即体验营销活动策划任务">
     <img class="c1-demo-base" src="assets/c1-intro-demo-cover.png" width="1440" height="900" alt="MAGIC AI 营销活动策划任务启动页">
     <span class="c1-demo-cta" aria-hidden="true">立即体验</span>
   </button>
-  <figcaption class="embed-caption"><b>表达增长目标 → Agent 组织任务 → 人确认关键决策 → 交付可执行方案</b></figcaption>
+  <figcaption class="embed-caption"><b>运营输入目标 → Agent 拆解任务 → 运营确认关键决策 → 输出可执行的活动方案</b></figcaption>
 </figure>
 <div class="wrap chap-body c1-intro-positioning">
 <p><b>MAGIC AI 把企业数据、营销经验和执行工具组织成可协作、可治理的智能增长系统。</b></p>
@@ -282,21 +286,29 @@ body.detail.c1 .toc-mode{min-height:var(--size-touch);margin-top:var(--space-5);
 <figure class="fig fig-shared"><div class="c1-zoom-image-hit"><img data-zoom loading="lazy" width="1920" height="1080" src="assets/c1-shared-product-model.png?v=matrix2" alt="AI 营销团队、智能增长操作系统与营销云底座构成的上中下三层产品结构"></div><figcaption><b>MAGIC AI 三层结构：上层由五类 Agent 承接增长目标，中层结合企业上下文形成判断，下层调用营销云完成真实执行。</b></figcaption></figure>
 <div class="wrap chap-body c1-intro-takeaway">
 <p><b>Agent-first：从找功能，到提目标。</b></p>
-<p>面对适合智能体承接的增长任务，用户先表达目标，由 Agent 组织执行步骤，人保留关键决策权。让这种协作方式更易理解、可控、可复用，是 MAGIC AI 持续探索的体验方向。</p>
+<p>我负责的部分：运营直接接触的主路径，包括任务怎么发起、执行过程怎么展示、结果怎么确认和复用。下面的策略、组件和设计工作流都围绕这条路径展开。</p>
 </div>
 </section>
 
-<section class="chap" id="background" data-chapter="problem" data-nav="发现与定义"><div class="wrap chap-head"><div><p class="c1-chapter-label">02 发现与定义</p><h2>为什么“意图”成为产品转型的核心问题</h2></div><div class="txt">
-<p>产品转型的目标，不是把每个功能都改造成对话入口，而是让 Agent 承接跨模块的完整营销任务。对运营人员来说，关键体验问题是：目标、人群、规则和修改记录能否在任务推进中持续被理解、确认与沿用。</p>
+<section class="chap" id="background" data-chapter="problem" data-nav="发现与定义"><div class="wrap chap-head"><div><p class="c1-chapter-label">02 发现与定义</p><h2>问题：活动目标要靠运营自己在模块之间传递</h2></div><div class="txt">
+<p>产品转型的目标不是把每个功能都改成对话入口，而是让 Agent 接手跨模块的完整营销任务。所以我先要弄清楚：一场活动的目标、人群、规则和中途修改，现在是怎么在模块之间传递的。</p>
 </div></div>
 <div class="wrap chap-body c1-subhead">
-<h3>从一场大促旅程，看见完整意图如何损耗</h3>
-<p>以会员运营做一场大促为例，看同一份业务目标如何在整条链路里损耗。</p>
+<h3>跨角色协作：一场大促如何被接力完成</h3>
+<p>先看运营、算法、代理团队与知识库如何跨阶段协作，再看运营在页面间推进任务时遇到的断点。</p>
 </div>
-<figure class="fig fig-shared"><div class="c1-zoom-image-hit"><img data-zoom loading="lazy" width="1920" height="1051" src="assets/c1-shared-journey.png?v=journey17" alt="一场大促的现状体验地图：编排、执行、复盘中的页面、回环，以及目标、上下文和修改如何损耗"></div><figcaption><b>用户体验地图发现：完整营销能力已经存在，但意图仍由运营人工串联。</b> 调研来源：业务流程走查、行业交付反馈与典型营销任务拆解。</figcaption></figure>
+<figure class="fig fig-shared"><div class="c1-zoom-image-hit"><img data-zoom loading="lazy" decoding="async" width="1920" height="1120" src="assets/c1-shared-journey-swimlane.svg?v=swimlane01" alt="一场营销活动跨三个角色、五个阶段的协作泳道图，展示运营、算法、代理团队与知识库之间的任务交接及现状痛点"></div></figure>
+<div class="wrap chap-body c1-subhead">
+<h3>体验旅程分析：同一个目标在哪些环节丢失</h3>
+<p>结合业务流程走查与行业交付反馈，沿运营视角梳理编排、执行、复盘阶段涉及的页面与回环。</p>
+</div>
+<figure class="fig fig-shared"><div class="c1-zoom-image-hit"><img data-zoom loading="lazy" width="1920" height="1051" src="assets/c1-shared-journey.png?v=journey17" alt="一场大促的现状体验地图：编排、执行、复盘中的页面、回环，以及目标、上下文和修改如何损耗"></div><figcaption>调研来源：业务流程走查、行业交付反馈与典型营销任务拆解。</figcaption></figure>
 <div class="wrap chap-body">
-<p>核心发现是，传统 SaaS 按功能组织能力，会员运营必须自己维持一条跨模块的完整意图。</p>
-<p>设计机会是，让系统从业务目标出发组织步骤，把分散能力串成可理解、可确认、可复用的任务链。</p>
+<p>发现有两点：</p>
+<ul class="c1-discovery-list">
+  <li>营销能力都已经具备，但目标和人群条件要运营在每个模块重新录入。“同一组人群条件分别要在 CDP 中创建、在 MA 画布配置时搜索选中。”</li>
+  <li>3 个角色需反复对接，知识策略都在本地：运营做策划、算法圈人群、代理做旅程配置。</li>
+</ul>
 </div>
 <div class="wrap chap-body c1-subhead">
 <h3 id="conflict">从产品转型到双向意图对齐</h3>
@@ -309,17 +321,14 @@ body.detail.c1 .toc-mode{min-height:var(--size-touch);margin-top:var(--space-5);
   </div>
 </figure>
 <div class="wrap chap-body c1-goals">
-<p>落到 AI 产品设计上，有三点需要注意。</p>
-<div class="c1-goal-grid" aria-label="AI 产品设计需要注意的三点">
-  <div class="c1-goal"><b><span>1</span>意图完整</b><p>说清要服务谁、遵守什么规则、做到什么结果。</p></div>
-  <div class="c1-goal"><b><span>2</span>过程可控</b><p>AI 先讲出理解和依据，关键步骤再由人确认。</p></div>
-  <div class="c1-goal"><b><span>3</span>结果可用</b><p>方案能改、能执行，经验和产出落到企业知识库与资产。</p></div>
-</div>
+<p><b>设计目标：Agent 先复述理解，人确认后再执行。</b> 运营从经营目标发起任务；Agent 在执行前说明自己理解的目标、人群和约束，运营可以补充或修正。确认后的信息在后续每一步沿用，不需要重复录入。</p>
+
 </div>
 </section>
 
-<section class="chap" id="strategy" data-chapter="strategy" data-nav="体验策略"><div class="wrap chap-head"><div><p class="c1-chapter-label">03 体验策略</p><h2>从增长任务出发，选择 AI 的介入方式</h2></div><div class="txt">
-<p>产品层先判断增长任务发生在持续洞察、策略决策还是跨步骤执行；体验层再根据任务由谁发起、意图是否明确、复杂度和出错代价，选择内嵌式 AI、协作式 Copilot（AI 协作助手）或 Multi-Agent（多智能体协作）。三者不是线性升级关系，而是面向不同任务条件的协作选择。</p>
+<section class="chap" id="strategy" data-chapter="strategy" data-nav="体验策略"><div class="wrap chap-head"><div><p class="c1-chapter-label">03 体验策略</p><h2>策略：按任务风险决定 AI 介入多深</h2></div><div class="txt">
+<p>并非所有营销任务都适合交给对话式 Agent。我用三个问题给任务分类：由谁发起？意图是否明确？出错代价多高？据此分出三种做法：</p>
+<ul><li>每天都要看、但运营不会主动提问的信息 → 内嵌式 AI，放在工作台</li><li>材料有歧义、需要人逐条判断的配置 → Copilot，AI 提取、人确认</li><li>跨多个模块的长任务 → Multi-Agent，Agent 执行、人在关键节点确认</li></ul>
 </div></div>
 <figure class="fig fig-shared c1-strategy-figure c1-explain-figure" aria-label="三种增长任务对应的设计介入">
   <div class="c1-shift-hit">
@@ -333,12 +342,12 @@ body.detail.c1 .toc-mode{min-height:var(--size-touch);margin-top:var(--space-5);
 <p>结合业务流程与行业交付反馈，三类策略分别对应持续发现机会、共同澄清规则和完成复杂任务。设计重点不是展示 AI 能做多少事，而是匹配用户当前的决策责任与操作成本。</p>
 </div>
 <div class="wrap chap-body c1-subhead">
-<h3 id="embedded">1. 洞察：用内嵌式 AI 帮用户看清经营机会</h3>
+<h3 id="embedded">1. 洞察：把 AI 建议放进工作台首页</h3>
 </div>
 <div class="wrap chap-body c1-strategy-modules">
-<div class="c1-strategy-grid" aria-label="洞察的需求洞察与产品体验">
-  <div><small>需求洞察</small><p>增长要持续判断哪些人群值得经营、上一场复盘能否复用。判断散落在多个模块，运营自行串联的门槛高。</p></div>
-  <div><small>产品体验</small><p>针对持续性、低打扰的经营洞察，将 AI 建议嵌入已有工作台，而不是要求运营反复发起对话。将人群信号、复盘结果与建议动作集中呈现，保留判断依据和进入下一步的选择权。</p></div>
+<div class="c1-strategy-grid" aria-label="洞察的需求洞察与我的做法">
+  <div><small>需求洞察</small><p>增长要持续判断哪些人群值得经营、上一场复盘能否复用。判断散落在多个模块，运营自行串联的门槛高。</p><p>关注：点击率、采纳率或客户反馈。</p></div>
+  <div><small>我的做法</small><p>把 AI 建议放在运营每天打开的工作台首页，集中展示人群信号、复盘结论和建议动作。每条建议都附上判断依据，由运营决定是否执行。没有做成对话入口，是因为这类信息需要每天看，但运营很少会主动提问。</p></div>
 </div>
 </div>
 <figure
@@ -353,12 +362,12 @@ body.detail.c1 .toc-mode{min-height:var(--size-touch);margin-top:var(--space-5);
   <figcaption class="embed-caption"><b>工作台首页，AI 主动更新运营洞察</b></figcaption>
 </figure>
 <div class="wrap chap-body c1-subhead">
-<h3 id="copilot">2. 决策：用协作式 Copilot 形成可信方案</h3>
+<h3 id="copilot">2. 规则配置：AI 提取，人逐条确认</h3>
 </div>
 <div class="wrap chap-body c1-strategy-modules">
-<div class="c1-strategy-grid" aria-label="决策的需求洞察与产品体验">
-  <div><small>需求洞察</small><p>前场交付要大量协助企业整理并配置规则。材料如何拆解、冲突和适用范围如何处理，需要一起澄清。</p></div>
-  <div><small>产品体验</small><p>规则材料可能存在歧义与冲突，因此采用人机协作而非直接自动执行：AI 负责提取信息、提示冲突和适用范围，运营负责澄清与确认；只有确认后的规则才进入策略库，供后续任务复用。</p></div>
+<div class="c1-strategy-grid" aria-label="规则配置的需求洞察与我的做法">
+  <div><small>需求洞察</small><p>交付时，前场同学要帮企业把活动规则文档整理成系统配置。规则文档里常有歧义和互相冲突的条款，让 AI 直接自动配置，出错代价太高。</p></div>
+  <div><small>我的做法</small><p>AI 负责从文档中提取规则，标出冲突条款和适用范围；运营逐条澄清、确认。只有确认过的规则才进入策略库，供之后的 Agent 任务调用。</p></div>
 </div>
 </div>
 <figure
@@ -373,12 +382,12 @@ body.detail.c1 .toc-mode{min-height:var(--size-touch);margin-top:var(--space-5);
   <figcaption class="embed-caption"><b>活动策略库，AI 拆解企业规则</b></figcaption>
 </figure>
 <div class="wrap chap-body c1-subhead">
-<h3 id="agent">3. 行动与验证：用 Multi-Agent 完成复杂增长任务</h3>
+<h3 id="agent">3. 活动策划：Multi-Agent 执行，人在关键节点确认</h3>
 </div>
 <div class="wrap chap-body c1-strategy-modules">
-<div class="c1-strategy-grid" aria-label="行动与验证的需求洞察与产品体验">
-  <div><small>需求洞察</small><p>真实任务里过程信息过多，活动分支也比演示更复杂。潜在诉求是中途可改，失败不必退出重做。</p></div>
-  <div><small>产品体验</small><p>面对跨步骤的长任务，由主 Agent 维护整体目标、专业 Agent 分工处理。界面优先展示任务状态、关键产物和待确认事项，低价值过程默认折叠；当条件变化或执行失败时，支持用户调整后继续，而非从头重做。</p></div>
+<div class="c1-strategy-grid" aria-label="活动策划的需求洞察与我的做法">
+  <div><small>需求洞察</small><p>真实任务里过程信息过多，活动分支也比演示更复杂。潜在诉求是中途可改，失败不必退出重做。</p><p>关注：任务完成率、重做次数或客户反馈。</p></div>
+  <div><small>我的做法</small><p>主 Agent 维护整体目标，专业 Agent 分工处理。界面优先展示任务状态、关键产物和待确认事项，低价值过程默认折叠；条件变化或执行失败时，运营修改后可以从当前步骤继续。</p></div>
 </div>
 </div>
 <figure
@@ -393,28 +402,28 @@ body.detail.c1 .toc-mode{min-height:var(--size-touch);margin-top:var(--space-5);
 </figure>
 </section>
 
-<section class="chap" id="design" data-chapter="mechanisms" data-nav="基础体验"><div class="wrap chap-head"><div><p class="c1-chapter-label">04 基础体验</p><h2>Agent 交互体验范式</h2></div><div class="txt">
-<p>三种 AI 介入方式不同，但用户始终需要回答三个问题：Agent 能做什么、目前准备怎么做、交付结果是否可信且可用。因此，将任务发起、协作确认和结果验收中的共性决策，沉淀为一致的交互范式。</p>
+<section class="chap" id="design" data-chapter="mechanisms" data-nav="基础体验"><div class="wrap chap-head"><div><p class="c1-chapter-label">04 基础体验</p><h2>通用规则：三种模式共用一套交互</h2></div><div class="txt">
+<p>三种模式的用户都会问同样三个问题：Agent 能做什么？它打算怎么做？结果能不能直接用？我把这三个问题对应的交互统一下来，保证不同 Agent 用起来是一样的。</p>
 </div></div>
 <figure class="fig fig-shared" aria-label="用户交互路径、用户可见界面与 Agent 基础体验范式的对应关系">
   <div class="c1-shift-hit">
     <iframe loading="lazy" class="c1-shift-frame c1-paradigm-frame" src="diagrams/paradigm.html" title="一次任务里，人如何与 Agent 协作" tabindex="-1"></iframe>
-    <button type="button" class="c1-shift-zoom" data-zoom-src="frame:diagrams/paradigm.html" data-zoom-ratio="16/9" aria-label="查看大图：Agent 交互体验范式"></button>
+    <button type="button" class="c1-shift-zoom" data-zoom-src="frame:diagrams/paradigm.html" data-zoom-ratio="16/9" aria-label="查看大图：三种模式共用的交互规则"></button>
   </div>
 </figure>
 <div class="wrap chap-body c1-subhead">
-<h3>1. 意图可见</h3>
-<p>通过任务示例、能力范围和输入引导，帮助用户明确可提出什么目标，以及需要补充哪些人群、条件与约束。</p>
+<h3>1. 发起任务</h3>
+<p>用任务示例和输入引导告诉运营可以提什么目标，缺少人群、条件或约束时主动追问。</p>
 </div>
 <figure class="fig fig-shared" aria-label="提供明确的意图预期，帮用户找到怎么开口">
   <div class="c1-shift-hit c1-intent-live">
     <iframe loading="lazy" class="c1-shift-frame c1-paradigm-frame" src="diagrams/intent.html" title="意图可见的三组引导" tabindex="-1"></iframe>
-    <button type="button" class="c1-shift-zoom" data-zoom-src="frame:diagrams/intent.html" data-zoom-ratio="16/9" aria-label="查看大图：意图可见"></button>
+    <button type="button" class="c1-shift-zoom" data-zoom-src="frame:diagrams/intent.html" data-zoom-ratio="16/9" aria-label="查看大图：发起任务"></button>
   </div>
 </figure>
 <div class="wrap chap-body c1-subhead">
-<h3>2. 过程可介入</h3>
-<p>非关键执行过程默认收起，关键计划、待确认动作与异常状态保持可见；用户能够查看、修改或确认下一步。</p>
+<h3>2. 查看过程</h3>
+<p>关键计划、待确认动作和异常始终可见，其余步骤默认收起；运营可以修改或确认下一步。</p>
 </div>
 <figure class="fig fig-shared" aria-label="计划任务确认卡与通用澄清卡">
   <div class="c1-shift-hit">
@@ -423,7 +432,7 @@ body.detail.c1 .toc-mode{min-height:var(--size-touch);margin-top:var(--space-5);
   </div>
 </figure>
 <div class="wrap chap-body c1-subhead">
-<h3>Agent 执行过程与过程反馈</h3>
+<h3>关键决策：Agent 执行过程怎么展示</h3>
 <p>从 Markdown 全量平铺，转向按用户决策需求分层；再补充执行轨迹、任务进度与关键节点反馈。</p>
 </div>
 <figure class="fig fig-shared" aria-label="Agent 执行过程与过程反馈的设计演进：Before、Design Decision、After">
@@ -433,8 +442,8 @@ body.detail.c1 .toc-mode{min-height:var(--size-touch);margin-top:var(--space-5);
   </div>
 </figure>
 <div class="wrap chap-body c1-subhead">
-<h3>3. 结果可用与沉淀</h3>
-<p>结果不仅要能查看，还应支持核对与调整；经用户确认的规则和产物再进入企业知识与资产体系，供后续任务复用。</p>
+<h3>3. 使用结果</h3>
+<p>结果可以核对和修改；运营确认后的规则和产物存入企业知识库，下次任务直接调用。</p>
 </div>
 <figure class="fig fig-shared" aria-label="编排打开抽屉、产出提炼任务知识、策划生成素材">
   <div class="c1-shift-hit">
@@ -443,8 +452,8 @@ body.detail.c1 .toc-mode{min-height:var(--size-touch);margin-top:var(--space-5);
   </div>
 </figure>
 <div class="wrap chap-body c1-subhead">
-<h3>主路径上的共性解法</h3>
-<p>将任务表达、协作确认与结构化产物抽象为三类基础组件，统一不同 Agent 的状态反馈、确认方式与结果呈现，降低跨场景使用时的学习成本。</p>
+<h3>三类基础组件：Compose · Collaborate · Artifact</h3>
+<p>我把上面三条规则落成三类组件：Compose（任务输入与追问）、Collaborate（计划确认与过程反馈）、Artifact（结构化产物）。已接入人群、内容等 8 类 Agent，新 Agent 接入时不需要重新设计这几部分的交互。</p>
 </div>
 <figure class="fig fig-shared c1-components-figure" aria-label="表达、协作、产物三类组件">
   <div class="c1-zoom-image-hit"><img data-zoom loading="lazy" width="2957" height="1311" src="assets/c1-ch4-components.png?v=4" alt="Compose 表达、Collaborate 协作、Artifact 产物三类核心组件"></div>
@@ -452,11 +461,16 @@ body.detail.c1 .toc-mode{min-height:var(--size-touch);margin-top:var(--space-5);
 </section>
 
 <section class="chap" id="evidence" data-chapter="evidence" data-nav="验证与总结"><div class="wrap chap-head"><div><p class="c1-chapter-label">05 验证与总结</p><h2>验证意图驱动，沉淀可复用的体验能力</h2></div><div class="txt">
-<p>从功能驱动走向意图驱动，要在真实任务中检验 Agent 是否准确理解意图、交付结果是否可用。用户愿意持续使用，产品才有健康增长的基础。</p>
+<p>我从三个层面看效果：Agent 有没有理解对目标、结果能不能直接用、客户会不会持续用。</p>
 </div></div>
 <div class="wrap chap-body c1-subhead">
-<h3>1. 从交付反馈到体验迭代</h3>
-<p>交付反馈暴露了规则分散、过程信息冗余与复杂分支难处理的问题，推动规则配置 Copilot、三栏任务空间和结构化产物的迭代。体验验证则围绕任务完成、关键操作质量与业务效果展开。</p>
+<h3>1. 怎么验证</h3>
+<p>在产品设计侧维护问题方案清单，来源包括客户反馈、行为数据和竞品分析，每项跟进到上线和采纳。规则配置 Copilot、结构化产物都来自这份清单的记录与迭代。验证指标分三层：</p>
+<ul class="c1-evidence-list">
+  <li>任务完成：任务完成率、中途放弃率。</li>
+  <li>关键操作质量：确认环节修改次数、重做率。</li>
+  <li>业务效果：2026 年营销云产品线签约金额增速 +35%，已签约订阅制 KA 客户 160+ 家（产品线整体数据）。</li>
+</ul>
 </div>
 <figure class="fig fig-shared c1-explain-figure" aria-label="真实任务、交付反馈、体验改版与下一次任务构成的反馈闭环和三层验证框架">
   <div class="c1-shift-hit">
@@ -466,8 +480,8 @@ body.detail.c1 .toc-mode{min-height:var(--size-touch);margin-top:var(--space-5);
   <figcaption>反馈闭环与三层验证框架。</figcaption>
 </figure>
 <div class="wrap chap-body c1-subhead">
-<h3>2. 把 AI 融入团队设计工作流</h3>
-<p>不同角色借助 AI 产出界面后，质量与规范容易出现差异。为此，将组件规则、页面范式和使用方法整理为 AI 可理解的设计上下文，用于方案探索与规范检查；团队负责业务判断、设计取舍和规范维护。</p>
+<h3>2. 团队的 AI 设计工作流</h3>
+<p>产品、前端和设计都开始用 AI Coding 产出页面后，同一类页面出现了多种写法。我把组件规则、页面范式和使用方法整理成 AI 可读取的设计上下文与 Skill，用于页面生成和规范走查。设计师仍负责业务判断、设计取舍和规范维护，AI 按规范生成并检查。</p>
 </div>
 <figure class="fig fig-shared c1-explain-figure" aria-label="AI 友好设计体系的三层演进、五步协作流程与四类实践示例">
   <div class="c1-shift-hit">
@@ -487,7 +501,6 @@ body.detail.c1 .toc-mode{min-height:var(--size-touch);margin-top:var(--space-5);
   <figcaption>企业上下文、协作原则与 Agent-first 使用习惯。</figcaption>
 </figure>
 <div class="wrap chap-body c1-summary-close">
-<p>围绕企业增长任务，MAGIC AI 持续探索意图驱动的协作体验，并推动产品在多个营销场景中落地。<b>2026 年营销云整体业务签约金额增速 +35%，已签约订阅制 KA 客户 160+ 家。</b></p>
 <p>在产品体验层面，持续关注 KA 客户的实际采用、有效任务完成与后续复用，并结合关键确认、异常恢复等交互反馈，优化 Agent 的可理解性、可控性与任务完成体验。</p>
 <p><b>Agent-first 的核心，不是让所有操作都变成对话，而是让 AI 在合适的任务中承接复杂过程，让用户专注于判断和决策。</b></p>
 </div>

@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1120" viewBox="0 0 1920 1120" role="img" aria-labelledby="title desc">
+  <title id="title">一场大促的跨角色协作泳道图</title>
+  <desc id="desc">营销活动从目标设定、人货模型、画布配置、活动上线到回收复盘，跨品牌运营、数据算法、代理团队和知识库协同；运营还需确认配置与上线交接。图下列出五类现状痛点。</desc>
+  <rect width="1920" height="1120" fill="#fafafa"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif" fill="#202124">
+    <text x="96" y="92" font-size="24" font-weight="600" fill="#5b57ee">用户体验地图 · 现状泳道</text>
+    <text x="96" y="150" font-size="42" font-weight="700">一场大促，需要 3 个角色 × 5 个阶段协同</text>
+    <text x="96" y="193" font-size="24" fill="#62646b">从目标设定到效果复盘，运营需持续确认跨角色交接；知识与规范分散在各阶段</text>
+
+    <!-- Phase headings -->
+    <rect x="96" y="232" width="292" height="88" rx="14" fill="#f1f1f3"/>
+    <rect x="400" y="232" width="292" height="88" rx="14" fill="#eeedff"/>
+    <rect x="704" y="232" width="292" height="88" rx="14" fill="#eeedff"/>
+    <rect x="1008" y="232" width="292" height="88" rx="14" fill="#eeedff"/>
+    <rect x="1312" y="232" width="292" height="88" rx="14" fill="#eeedff"/>
+    <rect x="1616" y="232" width="208" height="88" rx="14" fill="#eeedff"/>
+    <text x="118" y="282" font-size="22" font-weight="650" fill="#595b62">协作角色</text>
+    <text x="422" y="268" font-size="16" font-weight="600" letter-spacing="1" fill="#5b57ee">PHASE 01</text>
+    <text x="422" y="301" font-size="26" font-weight="650">目标设定</text>
+    <text x="726" y="268" font-size="16" font-weight="600" letter-spacing="1" fill="#5b57ee">PHASE 02</text>
+    <text x="726" y="301" font-size="26" font-weight="650">人货模型</text>
+    <text x="1030" y="268" font-size="16" font-weight="600" letter-spacing="1" fill="#5b57ee">PHASE 03</text>
+    <text x="1030" y="301" font-size="26" font-weight="650">画布配置</text>
+    <text x="1334" y="268" font-size="16" font-weight="600" letter-spacing="1" fill="#5b57ee">PHASE 04</text>
+    <text x="1334" y="301" font-size="26" font-weight="650">活动上线</text>
+    <text x="1638" y="268" font-size="16" font-weight="600" letter-spacing="1" fill="#5b57ee">PHASE 05</text>
+    <text x="1638" y="301" font-size="26" font-weight="650">回收复盘</text>
+
+    <!-- Swimlanes -->
+    <g stroke="#dedee3" stroke-width="2">
+      <rect x="96" y="336" width="1728" height="136" rx="12" fill="#fff"/>
+      <rect x="96" y="484" width="1728" height="136" rx="12" fill="#fff"/>
+      <rect x="96" y="632" width="1728" height="136" rx="12" fill="#fff"/>
+      <rect x="96" y="780" width="1728" height="136" rx="12" fill="#f4f3ff"/>
+      <path d="M400 336v580M704 336v580M1008 336v580M1312 336v580M1616 336v580" fill="none"/>
+    </g>
+    <g font-size="24" font-weight="650">
+      <text x="118" y="389">品牌运营</text><text x="118" y="423" font-size="16" font-weight="500" fill="#595b62">OPERATOR</text>
+      <text x="118" y="537">数据算法</text><text x="118" y="571" font-size="16" font-weight="500" fill="#595b62">ALGORITHM</text>
+      <text x="118" y="685">代理团队</text><text x="118" y="719" font-size="16" font-weight="500" fill="#595b62">AGENCY</text>
+      <text x="118" y="833">知识库</text><text x="118" y="867" font-size="16" font-weight="500" fill="#595b62">KNOWLEDGE</text>
+    </g>
+
+    <!-- Operator -->
+    <g font-size="21">
+      <text x="422" y="377" font-size="16" font-weight="600" fill="#5b57ee">STEP 1</text><text x="422" y="411" font-weight="650">确定活动主题 / 目标</text><text x="422" y="444" fill="#595b62">活动商品 · 活动优惠</text>
+      <text x="726" y="377" font-size="16" font-weight="600" fill="#5b57ee">STEP 2</text><text x="726" y="411" font-weight="650">下发需求清单</text><text x="726" y="444" fill="#595b62">人群包要求 · 活动商品</text>
+      <text x="1030" y="377" font-size="16" font-weight="600" fill="#5b57ee">需确认</text><text x="1030" y="411" font-weight="650">画布与文案</text>
+      <text x="1334" y="377" font-size="16" font-weight="600" fill="#5b57ee">需确认</text><text x="1334" y="411" font-weight="650">上线配置</text>
+      <text x="1638" y="377" font-size="16" font-weight="600" fill="#5b57ee">STEP 5</text><text x="1638" y="411" font-size="18" font-weight="650">数据回收 / 复盘</text><text x="1638" y="444" font-size="18" fill="#595b62">汇报结论 · 经验沉淀</text>
+    </g>
+    <!-- Algorithm -->
+    <g font-size="21">
+      <text x="726" y="525" font-size="16" font-weight="600" fill="#5b57ee">STEP 2</text><text x="726" y="559" font-weight="650">人货模型计算</text><text x="726" y="592" fill="#595b62">高意向人群 · 人货匹配</text>
+      <text x="1030" y="525" font-size="16" font-weight="600" fill="#5b57ee">输出</text><text x="1030" y="559" font-weight="650">存储到 CDP</text><text x="1030" y="592" fill="#595b62">人群包 · 商品包</text>
+    </g>
+    <!-- Agency -->
+    <g font-size="21">
+      <text x="1030" y="673" font-size="16" font-weight="600" fill="#5b57ee">STEP 3</text><text x="1030" y="707" font-weight="650">配置画布 + 文案</text><text x="1030" y="740" fill="#595b62">人群 · 触达 · 模板</text>
+      <text x="1334" y="673" font-size="16" font-weight="600" fill="#5b57ee">STEP 4</text><text x="1334" y="707" font-weight="650">活动上线</text><text x="1334" y="740" fill="#595b62">短信 · 彩信 · PUSH</text>
+    </g>
+    <!-- Knowledge -->
+    <g font-size="20">
+      <text x="422" y="825" font-weight="650">活动模板 / 规范</text><text x="422" y="862" fill="#595b62">SOP · 历史经验</text>
+      <text x="726" y="825" font-weight="650">商品池 / 人群标签</text><text x="726" y="862" fill="#595b62">CDP 标签体系</text>
+      <text x="1030" y="825" font-weight="650">画布技能 / 模板</text><text x="1030" y="862" fill="#595b62">营销云能力</text>
+      <text x="1334" y="825" font-weight="650">触达通道资源</text><text x="1334" y="862" fill="#595b62">短信 / 彩信额度</text>
+      <text x="1638" y="825" font-weight="650">数据治理规范</text><text x="1638" y="862" fill="#595b62">归因 · 报表</text>
+    </g>
+    <g font-size="17" fill="#a0a1a6" text-anchor="middle">
+      <text x="546" y="562">—</text><text x="1154" y="562">—</text><text x="1460" y="562">—</text><text x="1720" y="562">—</text>
+      <text x="546" y="710">—</text><text x="850" y="710">—</text><text x="1720" y="710">—</text>
+    </g>
+
+    <!-- Pain points -->
+    <rect x="96" y="944" width="1728" height="132" rx="14" fill="#202124"/>
+    <text x="120" y="988" font-size="17" font-weight="600" letter-spacing="1" fill="#bebaff">PAIN POINTS</text>
+    <text x="120" y="1028" font-size="21" font-weight="650" fill="#fff">现状痛点</text>
+    <g font-size="19" fill="#fff">
+      <text x="386" y="1000"><tspan fill="#bebaff" font-weight="700">01</tspan><tspan dx="12">角色间手工流转</tspan></text>
+      <text x="688" y="1000"><tspan fill="#bebaff" font-weight="700">02</tspan><tspan dx="12">需求反复对齐</tspan></text>
+      <text x="958" y="1000"><tspan fill="#bebaff" font-weight="700">03</tspan><tspan dx="12">2–3 天才上线</tspan></text>
+      <text x="1216" y="1000"><tspan fill="#bebaff" font-weight="700">04</tspan><tspan dx="12">知识 / 技能散落</tspan></text>
+      <text x="1510" y="1000"><tspan fill="#bebaff" font-weight="700">05</tspan><tspan dx="12">每场重做，复用难</tspan></text>
+    </g>
+    <text x="386" y="1040" font-size="17" fill="#c9c9ce">流程走查中的交接成本与知识断点</text>
+  </g>
+</svg>
