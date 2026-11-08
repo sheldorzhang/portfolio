@@ -1,0 +1,4 @@
+/* A collapsed left rail already provides the navigation affordance. */
+[data-app-layout] > [data-slot="sidebar"][data-state="collapsed"] ~ [data-slot="app-layout-body"] .be4d-chat-column button[aria-label="展开侧边栏"] {
+  display: none !important;
+}
