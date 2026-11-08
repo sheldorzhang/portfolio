@@ -14,7 +14,7 @@
 body.be4d{--color-line:#c6c6c6}
 /* 探索文章构建规范。Be4D 与 Intent UI 都挂在 body.detail.be4d 上，改这组变量两边一起变。 */
 body.detail.be4d{
- --article-measure:650px;
+ --article-measure:calc(var(--w-media-read) - 2 * var(--gutter));
  --article-pad-x:16px;
  --article-h1:36px; --article-h1-weight:600; --article-h1-lh:1.25; --article-h1-track:-0.01em;
  --article-h2:25.5px; --article-h2-weight:600; --article-h2-lh:1.333; --article-h2-track:0;
@@ -126,8 +126,8 @@ body.detail.be4d .case .be4d-hero-card .fig figcaption{margin-top:var(--space-3)
 body.detail.be4d #visual-00 .be4d-demo-cover{aspect-ratio:16/10}
 body.detail.be4d #visual-00 .be4d-demo-cover img{object-fit:cover}
 body.detail.be4d #visual-00 figcaption.be4d-replay-hint{width:100%;max-width:none;margin:var(--space-3) 0 0;padding:0;border:0;color:var(--color-fg-2);font-size:var(--fs-small);line-height:var(--lh-small);text-align:center}
-body.detail.be4d #visual-00{width:1040px;max-width:none;overflow:visible}
-body.detail.be4d #visual-00 .embed-frame{width:1040px!important;min-width:1040px!important;max-width:none!important;height:650px!important;min-height:650px!important;aspect-ratio:16/10}
+body.detail.be4d #visual-00{width:var(--article-measure);max-width:100%;margin-left:auto;margin-right:auto;overflow:visible}
+body.detail.be4d #visual-00 .embed-frame{display:block;width:100%!important;min-width:0!important;max-width:100%!important;height:auto!important;min-height:0!important;aspect-ratio:16/10}
 body.detail.be4d #visual-00 .be4d-demo-cta{position:absolute;left:50%;top:50%;z-index:2;display:flex;align-items:center;justify-content:center;min-width:104px;height:42px;padding:0 18px;border-radius:999px;background:#101010;color:#fff;font:500 14px/1 var(--font-sans);transform:translate(-50%,-50%);transition:background .18s ease,transform .18s ease}
 body.detail.be4d #visual-00 .be4d-demo-cover:hover .be4d-demo-cta,
 body.detail.be4d #visual-00 .be4d-demo-cover:focus-visible .be4d-demo-cta{background:#2c2c2c;transform:translate(-50%,calc(-50% - 1px))}
@@ -196,6 +196,12 @@ body.be4d .be4d-spark h3{margin:0 0 var(--space-4);font:var(--fw-bold) var(--fs-
 body.be4d .be4d-spark p:not(.chapter-label){max-width:50rem;margin:0 0 var(--space-4);font:var(--fw-regular) var(--fs-body)/var(--lh-body) var(--font-sans)}
 body.be4d .be4d-spark p.be4d-spark-question{margin-top:var(--space-5);font-weight:var(--fw-bold)}
 body.be4d .be4d-spark small{margin-top:0;padding-top:0}
+@media(min-width:1024px){
+ body.detail.be4d .case-main > #questions > .be4d-question-panel,
+ body.detail.be4d .case-main > #questions > .be4d-spark{width:auto;max-width:var(--c1-col);margin-left:var(--c1-left);margin-right:var(--c1-right)}
+ body.detail.be4d .case #diagram-01{width:auto;max-width:var(--c1-col);margin-left:var(--c1-left);margin-right:var(--c1-right)}
+}
+
 @media(max-width:767px){
  body.detail.be4d #questions .be4d-observation-head h2{margin-bottom:8px}
  body.detail.be4d .case-main > #questions > .be4d-question-panel{margin-left:auto;margin-right:auto;padding:0}
