@@ -8,6 +8,32 @@
     <script type="module" crossorigin src="./assets/index-Cz0vBXDn.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-DNy8Fska.css">
     <link rel="stylesheet" href="./assets/be4d-replay-overrides.css?v=20261108-sidebar-title-toggle-v1">
+      <script>
+    /* 外层文章保护：回放内部的 scrollIntoView / focus 会连带滚动外层文章。
+       当回放 iframe 不在视口内时，阻止它滚动外层页面，避免读者滑走后被拉回 hero。 */
+    (function(){
+      var embedVisible=null;
+      window.addEventListener('message',function(e){if(e.data&&e.data.type==='be4d-embed:visibility'){embedVisible=!!e.data.visible;}});
+      function frameVisible(){
+        if(embedVisible!==null) return embedVisible;
+        try{
+          var fe=window.frameElement; if(!fe||!window.parent) return true;
+          var r=fe.getBoundingClientRect(), ph=window.parent.innerHeight||0;
+          return r.bottom>0 && r.top<ph;
+        }catch(e){ return true; }
+      }
+      var origScroll=Element.prototype.scrollIntoView;
+      Element.prototype.scrollIntoView=function(opts){
+        if(!frameVisible()) return;
+        return origScroll.apply(this, arguments);
+      };
+      var origFocus=HTMLElement.prototype.focus;
+      HTMLElement.prototype.focus=function(opts){
+        if(!frameVisible()) return origFocus.call(this, Object.assign({}, opts, {preventScroll:true}));
+        return origFocus.call(this, opts);
+      };
+    })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

@@ -24,7 +24,9 @@ for (const htmlFile of htmlFiles) {
   // its absolute /src/main.tsx module path is resolved by Vite and is not a site asset.
   if (htmlFile === join(root, 'demos/intent-forms-heroui/index.html')) continue;
   const html = await (await import('node:fs/promises')).readFile(htmlFile, 'utf8');
-  for (const match of html.matchAll(attrPattern)) {
+  // Inline scripts contain HTML template strings, whose expressions are not file paths.
+  const markup = html.replace(/<script\b[^>]*>[\s\S]*?<\/script\s*>/gi, opening => opening.slice(0, opening.indexOf('>') + 1));
+  for (const match of markup.matchAll(attrPattern)) {
     const value = match[2].trim();
     if (!value || /^(?:[a-z][a-z\d+.-]*:|\/\/|#)/i.test(value)) continue;
     let pathname;

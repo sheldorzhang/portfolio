@@ -370,3 +370,22 @@ body.be4d .be4d-thinking-copy blockquote{margin:var(--space-6) 0;padding:var(--s
  body.be4d .be4d-thinking-step p{white-space:normal}
  body.be4d .be4d-thinking-track .be4d-thinking-loop{flex-wrap:wrap;white-space:normal}
 }
+
+/* 768–1023：正文、过渡句、说明图与 hero 共用同一几何（左缘 = 轨道槽位，宽 = 视口减去槽位与右侧 gutter），避免三段式宽度错位 */
+@media (min-width:768px) and (max-width:1023px){
+  body.detail.be4d{
+    --c1-col:min(var(--article-measure), calc(100% - var(--c1-slot) - var(--gutter)));
+    --c1-left:var(--c1-slot);
+    --c1-right:auto;
+  }
+  body.detail.be4d #questions .be4d-observation-head{max-width:var(--c1-col);margin-left:var(--c1-left);margin-right:var(--c1-right);padding-left:0;padding-right:0}
+  body.detail.be4d .case-main > #questions > .be4d-question-panel,
+  body.detail.be4d .case-main > #questions > .be4d-spark{width:auto;max-width:var(--c1-col);margin-left:var(--c1-left);margin-right:var(--c1-right)}
+  body.detail.be4d .case-main > #questions > .be4d-bridge{max-width:var(--c1-col);margin-left:var(--c1-left);margin-right:var(--c1-right);padding-left:0;padding-right:0;box-sizing:border-box}
+  body.detail.be4d .case #diagram-01{width:auto;max-width:var(--c1-col);margin-left:var(--c1-left);margin-right:var(--c1-right)}
+}
+
+/* 768–1023：证据轨道（02 章）与 hero、标题、标签共用同一左缘与宽度 */
+@media (min-width:768px) and (max-width:1023px){
+  body.detail.be4d .be4d-evidence-track{--evidence-card:min(var(--article-measure),calc(100vw - var(--c1-slot) - var(--gutter)));--evidence-inset:var(--c1-slot);padding-left:var(--evidence-inset);padding-right:calc(100vw - var(--evidence-inset) - var(--evidence-card));scroll-padding-left:var(--evidence-inset)}
+}

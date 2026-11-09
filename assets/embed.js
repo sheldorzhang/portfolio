@@ -129,6 +129,13 @@
     f.addEventListener('error',failed);
     box._embedTimeout=setTimeout(failed,25000);
     cover.insertAdjacentElement('afterend',f);
+    // 把 iframe 是否在文章视口内告诉回放，回放据此阻止把外层文章滚走
+    var postVisibility=function(){try{if(f.contentWindow)f.contentWindow.postMessage({type:'be4d-embed:visibility',visible:!!f.__visible},'*');}catch(e){}};
+    f.__visible=false;
+    f.__postVisibility=postVisibility;
+    if('IntersectionObserver' in window){
+      new IntersectionObserver(function(entries){f.__visible=!!(entries[0]&&entries[0].isIntersecting);postVisibility();}).observe(f);
+    }else{f.__visible=true;}
     if(focusFrame){f.inert=false;f.focus({preventScroll:true});}
     if(box.hasAttribute('data-embed-expand-on-start')){
       requestAnimationFrame(function(){if(f.isConnected&&activeFrame!==f)openExpanded(f);});
@@ -163,6 +170,7 @@
       if(event.data.type==='be4d-replay:ready'&&owner&&owner.hasAttribute('data-embed-ready-message')){
         markReplayReady(frames[i],owner);
         frames[i].contentWindow.postMessage({type:'be4d-replay:visible'},event.origin==='null'?'*':event.origin);
+        if(frames[i].__postVisibility)frames[i].__postVisibility();
       }else if(location.protocol!=='file:'&&event.origin!==location.origin){
         break;
       }else if(event.data.type==='magic-replay:ready'){
