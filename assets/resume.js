@@ -7,7 +7,7 @@ var resumeMarkup=`
     <h2 id="rs-title">张耕</h2>
     <p>产品体验设计师｜10 年经验</p>
     <ul class="hero-tags"><li>AI Agent 体验</li><li>复杂 B 端业务</li><li>设计系统</li><li>AI Coding</li></ul>
-    <p class="sheet-contact"><button class="sheet-copy" type="button" data-resume-copy="coda0415" data-copy-label="微信" data-copy-hint="点击复制" aria-label="复制微信号">微信 coda0415</button> ｜ <button class="sheet-copy" type="button" data-resume-copy="sheldorzhang@gmail.com" data-copy-label="邮箱" data-copy-hint="点击复制" aria-label="复制邮箱">sheldorzhang@gmail.com</button><br>作品集：<a href="https://sheldorzhang.github.io/portfolio/" target="_blank" rel="noopener">https://sheldorzhang.github.io/portfolio/</a></p>
+    <p class="sheet-contact"><button class="sheet-copy" type="button" data-resume-copy="coda0415" data-copy-label="微信" data-copy-hint="点击复制" aria-label="复制微信号">微信 coda0415</button> ｜ <button class="sheet-copy" type="button" data-resume-copy="sheldorzhang@gmail.com" data-copy-label="邮箱" data-copy-hint="点击复制" aria-label="复制邮箱">sheldorzhang@gmail.com</button></p>
     <img class="sheet-photo" src="assets/resume-photo.jpg?v=20261116-v1" alt="张耕职业头像" width="600" height="600" loading="lazy" decoding="async">
   </header>
 
@@ -55,7 +55,7 @@ var resumeMarkupEn=`
     <h2 id="rs-title">Geng Zhang</h2>
     <p>Product Experience Designer | 10 Years of Experience</p>
     <ul class="hero-tags"><li>AI Agent Experience</li><li>Complex B2B Experiences</li><li>Design Systems</li><li>AI Coding</li></ul>
-    <p class="sheet-contact"><button class="sheet-copy" type="button" data-resume-copy="coda0415" data-copy-label="WeChat" data-copy-hint="Click to copy" aria-label="Copy WeChat ID">WeChat coda0415</button> | <button class="sheet-copy" type="button" data-resume-copy="sheldorzhang@gmail.com" data-copy-label="Email" data-copy-hint="Click to copy" aria-label="Copy email">sheldorzhang@gmail.com</button><br>Portfolio: <a href="https://sheldorzhang.github.io/portfolio/" target="_blank" rel="noopener">https://sheldorzhang.github.io/portfolio/</a></p>
+    <p class="sheet-contact"><button class="sheet-copy" type="button" data-resume-copy="coda0415" data-copy-label="WeChat" data-copy-hint="Click to copy" aria-label="Copy WeChat ID">WeChat coda0415</button> | <button class="sheet-copy" type="button" data-resume-copy="sheldorzhang@gmail.com" data-copy-label="Email" data-copy-hint="Click to copy" aria-label="Copy email">sheldorzhang@gmail.com</button></p>
     <img class="sheet-photo" src="assets/resume-photo.jpg?v=20261116-v1" alt="Portrait of Geng Zhang" width="600" height="600" loading="lazy" decoding="async">
   </header>
 
