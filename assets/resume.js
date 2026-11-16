@@ -13,17 +13,8 @@ var resumeMarkup=`
 
   <section class="sheet-sec sheet-core"><h3>核心能力</h3><ul><li><b>复杂业务与 AI-native 产品设计</b>：具备企业级营销、B2B 行业协作及零售电商产品经验。擅长从用户目标与真实业务场景出发，重构复杂任务流程及人机分工。客户交付中，借助 Agent 的营销策划由传统 2–3 天缩短至约 10 分钟产出可执行方案。</li><li><b>Agent 交互与人机协作设计</b>：负责企业级 AI 产品（MAGIC AI）的配置与任务协作体验，围绕任务发起、执行协作和结果验收设计交互机制并推动落地，兼顾执行效率、用户控制和业务可靠性。客户交付验收中，圈人及活动编排准确率均超过 90%。</li><li><b>设计系统与工程落地</b>：主导营销云 AI 体验设计体系建设，将交互模式、组件规范和页面范式沉淀为 AI 可理解和复用的设计资产；结合 Figma、Cursor 与 AI Coding 交付可运行原型，并实践由设计师修复前端问题、提交研发审核的协作方式。单次设计交付周期由 2–3 天缩短至 5–7 小时，沟通与走查耗时由 120 分钟缩短至 20 分钟。</li></ul></section>
   <section class="sheet-sec"><h3>工作经历</h3>
-    <p>负责企业级 AI、B2B 行业协作及零售电商产品的体验设计，覆盖营销云 MAGIC AI、企点商通、云 Mall、鹅享团等产品线。</p>
     <div class="sheet-row"><h4>腾讯｜CSIG｜产品设计师</h4><span>2021.04 – 至今</span></div>
-  </section>
-    <div class="sheet-row"><h4>喜马拉雅｜主播生态事业部｜UI 设计师</h4><span>2018.08 – 2021.04</span></div>
-    <ul><li><b>平台重构</b>：版权方、主播和运营在节目制作中协作链路长。主导有声节目制作平台重构，理顺三方协作流程；撮合效率提升 20%，运营成本降低 70%，支撑 2000+ 节目上线。</li><li><b>设计规范与分享裂变</b>：统一多端设计规范并推进代码化，组件复用率提升 40%；负责「万物声」有声明信片的分享裂变设计，任务完成率提升 50%。</li></ul>
-    <div class="sheet-row"><h4>言几又（书店）｜UI 设计师</h4><span>2017.06 – 2018.08</span></div>
-    <ul><li><b>新零售与品牌体验</b>：负责品牌电商小程序、会员体系及 O2O 消费体验设计，建立门店运营物料规范，推动线上线下品牌体验统一。</li></ul>
-    <div class="sheet-row"><h4>AIUX 设计咨询公司｜产品设计师</h4><span>2016.09 – 2017.06</span></div>
-    <ul><li><b>多客户产品设计</b>：参与鲁大师、PandaPia、芒果云等客户项目，负责产品体验方案与高保真原型设计，协同推进方案评审与交付。</li></ul>
-  </section>
-  <section class="sheet-sec"><h3>核心项目</h3>
+    <p>负责企业级 AI、B2B 行业协作及零售电商产品的体验设计，覆盖营销云 MAGIC AI、企点商通、云 Mall、鹅享团等产品线。</p>
     <div class="sheet-row"><h4>01｜腾讯企点营销云 MAGIC AI</h4><span>2024 – 至今</span></div>
     <p>面向企业增长的 AI Agent 营销平台，结合 Agent 能力与 CDP（客户数据）、MA（营销自动化）等业务系统，运营以营销目标发起任务，由 Agent 生成可直接使用的业务产物。负责 Agent 基础配置与任务协作体验，主导营销云 AI 设计体系。</p>
     <ul><li><b>AI-native 任务体验重构</b>：围绕传统营销 SaaS 跨模块配置、复杂业务决策和多角色协作问题，参与重构目标驱动的营销任务体验，支持内嵌式 AI、Copilot 和 Multi-Agent 等场景的体验设计。</li><li><b>人机协作与成果应用</b>：围绕任务发起、理解与执行协作、结果验收与业务应用，设计意图澄清、计划确认、执行反馈、关键操作控制及任务成果工作区，帮助用户理解任务、核对生成结果并继续使用业务产物。</li><li><b>设计体系与工程交付</b>：主导 AI 体验设计体系建设，沉淀通用交互机制和可复用组件，结合 AI Coding、可运行原型及前端联调推动设计落地。</li><li><b>业务成果</b>：营销策划、圈人和活动编排能力已在鞋服行业客户的真实业务中应用，并通过客户交付验收；营销云产品线签约金额增速约 40%。</li></ul>
@@ -35,6 +26,12 @@ var resumeMarkup=`
     <ul><li><b>商家运营与营销配置效率</b>：针对营销活动规则复杂、配置步骤繁琐等问题，优化营销模板、规则配置、条件校验与活动预览，降低商家运营配置成本，提高活动管理的稳定性与效率。</li><li><b>消费端购买决策与转化体验</b>：围绕优惠规则理解、活动参与和购买决策，优化商品、会员成长、促销及社群团购体验，清晰表达优惠条件与用户收益，提升营销参与和购买转化。</li><li><b>业务成果</b>：营销转化链路（浏览 → 加购 → 下单）转化率提升 28%；鹅享团上线 6 个月内 GMV 突破 200 万+。</li></ul>
     <div class="sheet-row"><h4>04｜企点营销云 企微互动 SCRM</h4><span>2022</span></div>
     <ul><li><b>0–1 MVP 与跨端客户运营设计</b>：围绕导购获客、客户管理及营销触达，设计后台运营配置与企微侧边栏的协作体验，推动 MVP 落地，支持 6+ 付费客户使用。</li></ul>
+    <div class="sheet-row"><h4>喜马拉雅｜主播生态事业部｜UI 设计师</h4><span>2018.08 – 2021.04</span></div>
+    <ul><li><b>平台重构</b>：版权方、主播和运营在节目制作中协作链路长。主导有声节目制作平台重构，理顺三方协作流程；撮合效率提升 20%，运营成本降低 70%，支撑 2000+ 节目上线。</li><li><b>设计规范与分享裂变</b>：统一多端设计规范并推进代码化，组件复用率提升 40%；负责「万物声」有声明信片的分享裂变设计，任务完成率提升 50%。</li></ul>
+    <div class="sheet-row"><h4>言几又（书店）｜UI 设计师</h4><span>2017.06 – 2018.08</span></div>
+    <ul><li><b>新零售与品牌体验</b>：负责品牌电商小程序、会员体系及 O2O 消费体验设计，建立门店运营物料规范，推动线上线下品牌体验统一。</li></ul>
+    <div class="sheet-row"><h4>AIUX 设计咨询公司｜产品设计师</h4><span>2016.09 – 2017.06</span></div>
+    <ul><li><b>多客户产品设计</b>：参与鲁大师、PandaPia、芒果云等客户项目，负责产品体验方案与高保真原型设计，协同推进方案评审与交付。</li></ul>
   </section>
   <section class="sheet-sec"><h3>实践与探索</h3>
     <div class="sheet-row"><h4>Be4D｜设计系统 × AI Coding</h4></div>
@@ -68,15 +65,6 @@ var resumeMarkupEn=`
   <section class="sheet-sec"><h3>Experience</h3>
     <div class="sheet-row"><h4>Tencent | CSIG | Product Experience Designer</h4><span>Apr 2021 – Present</span></div>
     <p>Responsible for experience design for enterprise AI, B2B industry collaboration, and retail e-commerce products, covering Marketing Cloud MAGIC AI, Qidian IM, Cloud Mall, and Ezhantuan.</p>
-    <div class="sheet-row"><h4>Ximalaya | Anchor Ecosystem Division | UI Designer</h4><span>Aug 2018 – Apr 2021</span></div>
-    <ul><li><b>Platform Rebuild</b>: Led the rebuild of the audio content production platform and streamlined the three-party workflow across rights holders, anchors, and operations. Matching efficiency up 20%, operating cost down 70%, supporting 2,000+ programs.</li><li><b>Design System and Sharing Growth</b>: Unified multi-platform design specifications and pushed them into code; component reuse up 40%. Designed the sharing mechanism for "Wan Wu Sheng" audio postcards; task completion up 50%.</li></ul>
-    <div class="sheet-row"><h4>Yanjiyou (Bookstore) | UI Designer</h4><span>Jun 2017 – Aug 2018</span></div>
-    <ul><li><b>New Retail and Brand Experience</b>: Designed the brand e-commerce mini program, membership system, and O2O experience, and established store operation material guidelines.</li></ul>
-    <div class="sheet-row"><h4>AIUX Design Consultancy | Product Designer</h4><span>Sep 2016 – Jun 2017</span></div>
-    <ul><li><b>Multi-client Product Design</b>: Worked on projects for LuDashi, PandaPia, and Mango Cloud, delivering experience proposals and high-fidelity prototypes.</li></ul>
-  </section>
-
-  <section class="sheet-sec"><h3>Selected Projects</h3>
     <div class="sheet-row"><h4>01 | Tencent Qidian Marketing Cloud MAGIC AI</h4><span>2024 – Present</span></div>
     <p>An AI Agent marketing platform for enterprise growth. Operators launch tasks from marketing goals, and the Agent produces business outputs they can use directly. Owned Agent foundational setup and task collaboration, and led the Marketing Cloud AI design system.</p>
     <ul><li><b>AI-native Task Experience Redesign</b>: Reworked goal-driven marketing task experiences around cross-module configuration in traditional marketing SaaS, complex business decisions, and multi-role collaboration; covered embedded AI, Copilot, and Multi-Agent scenarios.</li><li><b>Human-AI Collaboration and Outcome Use</b>: Designed intent clarification, plan confirmation, execution feedback, key-action controls, and a task output workspace, so users understand tasks, verify generated results, and keep using the business outputs.</li><li><b>Design System and Engineering Delivery</b>: Built reusable interaction mechanisms and components, and drove delivery with AI Coding, runnable prototypes, and front-end integration.</li><li><b>Business Results</b>: Campaign planning, audience selection, and campaign orchestration capabilities are in use with footwear and apparel clients and passed client acceptance. Marketing Cloud product line contract value growth of about 40%.</li></ul>
@@ -88,7 +76,14 @@ var resumeMarkupEn=`
     <ul><li><b>Merchant Operations and Campaign Setup</b>: Reduced the cost and complexity of merchant campaign setup through templates, rule configuration, validation, and campaign preview.</li><li><b>Consumer Decision and Conversion</b>: Made offer conditions and benefits clear before purchase, improving participation and conversion across product, membership, promotion, and group buying flows.</li><li><b>Business Results</b>: Conversion from browse to add-to-cart to order up 28%; Ezhantuan GMV surpassed 2 million+ within six months of launch.</li></ul>
     <div class="sheet-row"><h4>04 | Qidian Marketing Cloud WeCom Engagement SCRM</h4><span>2022</span></div>
     <ul><li><b>0–1 MVP and Cross-platform Client Operations</b>: Designed the admin configuration and WeCom sidebar collaboration for shopping guide acquisition, customer management, and marketing outreach. Drove the MVP to launch, with 6+ paying clients.</li></ul>
+    <div class="sheet-row"><h4>Ximalaya | Anchor Ecosystem Division | UI Designer</h4><span>Aug 2018 – Apr 2021</span></div>
+    <ul><li><b>Platform Rebuild</b>: Led the rebuild of the audio content production platform and streamlined the three-party workflow across rights holders, anchors, and operations. Matching efficiency up 20%, operating cost down 70%, supporting 2,000+ programs.</li><li><b>Design System and Sharing Growth</b>: Unified multi-platform design specifications and pushed them into code; component reuse up 40%. Designed the sharing mechanism for "Wan Wu Sheng" audio postcards; task completion up 50%.</li></ul>
+    <div class="sheet-row"><h4>Yanjiyou (Bookstore) | UI Designer</h4><span>Jun 2017 – Aug 2018</span></div>
+    <ul><li><b>New Retail and Brand Experience</b>: Designed the brand e-commerce mini program, membership system, and O2O experience, and established store operation material guidelines.</li></ul>
+    <div class="sheet-row"><h4>AIUX Design Consultancy | Product Designer</h4><span>Sep 2016 – Jun 2017</span></div>
+    <ul><li><b>Multi-client Product Design</b>: Worked on projects for LuDashi, PandaPia, and Mango Cloud, delivering experience proposals and high-fidelity prototypes.</li></ul>
   </section>
+
 
   <section class="sheet-sec"><h3>Practice and Exploration</h3>
     <div class="sheet-row"><h4>Be4D | Design Systems × AI Coding</h4></div>
