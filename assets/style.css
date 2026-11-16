@@ -1275,8 +1275,8 @@ body.detail .case .fig.fig-full figcaption{
 @media(max-width:767px){
   body:has(#dock){padding-bottom:calc(var(--size-touch) + var(--space-4) + env(safe-area-inset-bottom) + var(--space-6))}
   #dock.dock,#dock.dock.in{top:auto;bottom:0;left:0;right:auto;width:100%;max-width:100%;height:calc(var(--size-touch) + var(--space-4) + env(safe-area-inset-bottom));margin:0;padding:0 var(--gutter) env(safe-area-inset-bottom);display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:0;transform:none;background:color-mix(in srgb,var(--color-bg) 92%,transparent);border:0;border-radius:0;box-shadow:none}
-  #nav.nav:not(.is-hidden)~#dock.dock{padding-left:calc(var(--gutter) + var(--size-touch) + var(--space-4))}
-  #nav.nav,#nav.nav[data-mode="home"]{top:auto;bottom:0;left:var(--gutter);right:auto;width:var(--size-touch);height:calc(var(--size-touch) + var(--space-4) + env(safe-area-inset-bottom));padding:0 0 env(safe-area-inset-bottom);margin:0;display:flex;align-items:center;justify-content:center;transform:none}
+  body:has(#dock) #nav.nav:not(.is-hidden)~#dock.dock{padding-left:calc(var(--gutter) + var(--size-touch) + var(--space-4))}
+  body:has(#dock) #nav.nav,body:has(#dock) #nav.nav[data-mode="home"]{top:auto;bottom:0;left:var(--gutter);right:auto;width:var(--size-touch);height:calc(var(--size-touch) + var(--space-4) + env(safe-area-inset-bottom));padding:0 0 env(safe-area-inset-bottom);margin:0;display:flex;align-items:center;justify-content:center;transform:none}
   #dock.dock > a,#dock.dock .dock-work{flex:0 1 auto;min-width:0;display:flex;justify-content:center;width:auto;height:100%}
   #dock.dock > a,#dock.dock .dock-work > a{flex:0 1 auto;min-width:0;height:100%;justify-content:center;text-align:center;padding:0}
   #dock .dock-menu{top:auto;bottom:calc(100% + var(--space-3));left:50%;transform:translateX(-50%)}
