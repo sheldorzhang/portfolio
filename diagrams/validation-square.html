@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<style>
+:root{--ink:#1C1C1C;--ink2:#5C5C5C;--ink3:#8A8A8A;--line:#E6E6E6;--bg:#FAFAFA;--font:"PingFang SC","Hiragino Sans GB","Noto Sans SC",sans-serif;--serif:"Noto Serif SC","Songti SC","STSong",serif}
+*{box-sizing:border-box}
+html,body{margin:0;background:#e8e8e8}
+body{min-height:100vh;display:grid;place-items:center;font-family:var(--font);color:var(--ink)}
+.canvas{width:1920px;height:1080px;padding:96px 120px;background:var(--bg);display:flex;flex-direction:column;justify-content:center}
+h2{margin:0 0 36px;font:600 46px/1.3 var(--serif)}
+.stages{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.stage{background:#fff;border:1px solid var(--ink);padding:28px 28px;min-height:150px;display:flex;flex-direction:column;justify-content:center}
+.stage .n{font:500 22px/1 var(--font);color:var(--ink3);margin-right:14px;vertical-align:middle}
+.stage b{display:block;font:600 30px/1.3 var(--serif)}
+.stage > span{display:block;margin-top:12px;font-size:22px;color:var(--ink2)}
+.loop{display:flex;align-items:center;justify-content:center;gap:12px;margin:22px 0 26px;font-size:22px;color:var(--ink2)}
+.loop::before,.loop::after{content:"";width:120px;border-top:1px dashed var(--ink3)}
+.rule{border-top:1px solid var(--line);padding-top:32px}
+.rule h3{margin:0 0 22px;font:600 36px/1.3 var(--serif)}
+.thead,.tr{display:grid;grid-template-columns:1fr 1.3fr 1.3fr;column-gap:32px;align-items:center}
+.thead{padding-bottom:16px;border-bottom:1px solid var(--ink);font-size:20px;color:var(--ink3)}
+.tr{padding:26px 0;border-bottom:1px solid var(--line);font-size:24px;min-height:96px}
+.tr .lv{font-weight:600}
+.tr .q{color:var(--ink)}
+.tr .s{color:var(--ink2);font-size:22px}
+</style>
+</head>
+<body>
+<main class="canvas" aria-label="从真实任务中发现问题，持续验证体验改进；四层产品价值验证">
+  <h2>从真实任务中发现问题，持续验证体验改进</h2>
+  <div class="stages">
+    <article class="stage"><b><span class="n">01</span>真实任务</b><span>客户实际使用</span></article>
+    <article class="stage"><b><span class="n">02</span>交付反馈</b><span>体验问题与信号</span></article>
+    <article class="stage"><b><span class="n">03</span>体验优化</b><span>设计与产品改进</span></article>
+    <article class="stage"><b><span class="n">04</span>后续验证</b><span>检查改进效果</span></article>
+  </div>
+  <p class="loop">持续反馈与迭代验证</p>
+  <section class="rule">
+    <h3>四层产品价值验证</h3>
+    <div class="thead"><span>验证层级</span><span>核心问题</span><span>观察信号</span></div>
+    <div class="tr"><span class="lv">01 使用行为</span><span class="q">用户是否开始并持续使用？</span><span class="s">新建任务、活跃任务、AI 请求</span></div>
+    <div class="tr"><span class="lv">02 任务质量</span><span class="q">Agent 是否正确完成任务？</span><span class="s">准确率、规则校验、人工修改</span></div>
+    <div class="tr"><span class="lv">03 产物采纳</span><span class="q">结果是否进入实际业务？</span><span class="s">结果确认、审核、发布</span></div>
+    <div class="tr"><span class="lv">04 业务价值</span><span class="q">客户是否真正获益？</span><span class="s">营销效率、点击转化、销售表现</span></div>
+  </section>
+</main>
+</body>
+</html>
