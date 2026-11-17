@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --fig-w:1920px;--fig-h:1080px;--fig-bg:#FAFAFA;--fig-card:#FFFFFF;
+  --fig-ink:#1C1C1C;--fig-ink-2:#5C5C5C;--fig-ink-3:#8A8A8A;--fig-line:#E6E6E6;--fig-accent:#1C1C1C;
+  --fig-font:"PingFang SC","Hiragino Sans GB","Noto Sans SC",sans-serif;
+  --fig-serif:"Noto Serif SC","Songti SC","STSong","SimSun",serif;
+  --fig-side:96px;--fig-label-w:300px;--fig-line-gap:24px;--fig-gap:16px;
+  --fig-card-border:1px solid var(--fig-ink);--fig-focus-border:2px solid var(--fig-ink);
+  --fig-tag:17px;--fig-label:24px;--fig-note:17px;--fig-title:23px;--fig-body:18px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:#e8e8e8}
+body{min-height:100vh;display:grid;place-items:center;font-family:var(--fig-font);color:var(--fig-ink)}
+h2,h3{font-family:var(--fig-serif)}
+.canvas{width:var(--fig-w);height:var(--fig-h);padding:52px var(--fig-side);background:var(--fig-bg);display:flex;align-items:center}
+.table{width:100%;display:grid;grid-template-columns:var(--fig-label-w) minmax(0,1fr);column-gap:var(--fig-line-gap)}
+.row{display:grid;grid-template-columns:subgrid;grid-column:1 / -1;align-items:stretch;border-bottom:1px solid var(--fig-line);padding:var(--fig-line-gap) 0}
+.row:last-child{border-bottom:0}
+.label{grid-column:1;border-right:1px solid var(--fig-line);margin:calc(var(--fig-line-gap) * -1) 0;padding:0 16px 0 4px;display:flex;flex-direction:column;justify-content:center;gap:10px}
+.label .tag{margin:0;color:var(--fig-accent);font-size:var(--fig-tag);font-weight:500;line-height:1}
+.label h2{margin:0;font-size:var(--fig-label);font-weight:600;line-height:1.4}
+.label p{margin:0;color:var(--fig-ink-3);font-size:var(--fig-note);line-height:1.5}
+.cells{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--fig-gap);min-width:0}
+.card{margin:0;background:var(--fig-card);border:var(--fig-card-border);padding:22px 26px;display:flex;flex-direction:column;justify-content:center;gap:8px;min-height:0}
+.card .kicker{margin:0;color:var(--fig-ink-3);font-size:var(--fig-tag);font-weight:500;line-height:1.2}
+.card h3{margin:0;font-size:var(--fig-title);font-weight:600;line-height:1.4}
+.card p{margin:0;color:var(--fig-ink-2);font-size:var(--fig-body);line-height:1.5}
+.card.focus{background:var(--fig-ink);color:#fff;border:var(--fig-focus-border)}
+.card.focus .kicker,.card.focus h3{color:#fff}
+.card.focus p{color:rgba(255,255,255,.72)}
+.card.soft{background:#EDEDED;border:1px solid #CFCFCF}
+.card.soft h3{color:var(--fig-ink-2)}
+.card.soft p{color:var(--fig-ink-3)}
+.cells.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.cells.four{grid-template-columns:repeat(3,minmax(0,1fr))}
+.harness{grid-column:1 / -1;margin-top:var(--fig-gap);background:#EDEDED;border:1px solid #CFCFCF;padding:18px 26px;display:flex;align-items:baseline;gap:16px}
+.harness h3{margin:0;font-size:var(--fig-title);font-weight:600;white-space:nowrap;color:var(--fig-ink-2)}
+.harness p{margin:0;color:var(--fig-ink-3);font-size:var(--fig-body);line-height:1.5}
+.cite{position:relative;display:flex;align-items:flex-end;justify-content:center;padding:14px 0 0;border-bottom:1px solid var(--fig-ink);min-height:64px}
+.cite::before,.cite::after{content:"";position:absolute;bottom:-1px;width:1px;height:16px;background:var(--fig-ink)}
+.cite::before{left:0}.cite::after{right:0}
+.cite p{margin:0;padding:0 0 12px;font-family:var(--fig-serif);font-size:22px;font-weight:600;line-height:1.45;text-align:center}
+.sheet{background:var(--fig-card);border:var(--fig-card-border);display:grid;grid-template-columns:repeat(3,1fr);overflow:hidden}
+.sheet .card{border:0}
+.sheet .card + .card{border-left:1px solid var(--fig-line)}
+.flowcells{position:relative}
+.card.soft{position:relative}
+.card.soft:not(:last-of-type)::after{content:"→";position:absolute;right:-14px;top:50%;transform:translateY(-50%);color:var(--fig-ink-3);font-size:20px;background:#FAFAFA;line-height:1;z-index:2}
+.flow{grid-column:1 / -1;position:relative;display:flex;align-items:flex-end;justify-content:center;padding:14px 0 0;border-bottom:1px solid var(--fig-ink);min-height:58px;margin-top:var(--fig-gap)}
+.flow::before,.flow::after{content:"";position:absolute;bottom:-1px;width:1px;height:16px;background:var(--fig-ink)}
+.flow::before{left:0}.flow::after{right:0}
+.flow p{margin:0;padding:0 0 12px;font-family:var(--fig-serif);font-size:21px;font-weight:600;line-height:1.45;text-align:center}
+</style>
+</head>
+<body>
+<main class="canvas" aria-label="一次任务中，人如何与 Agent 协作">
+  <section class="table">
+
+    <div class="row">
+      <div class="label"><p class="tag">用户交互路径</p><h2>三个阶段</h2><p>表达目标、协作确认、验收应用</p></div>
+      <div class="cells">
+        <article class="card focus"><p class="kicker">01</p><h3>任务发起</h3><p>表达目标与约束</p></article>
+        <article class="card focus"><p class="kicker">02</p><h3>理解与执行协作</h3><p>理解、修改与确认</p></article>
+        <article class="card focus"><p class="kicker">03</p><h3>结果验收与应用</h3><p>验收并授权执行</p></article>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="label"><p class="tag">用户可见</p><h2>交互与控制</h2><p>人在环节点介入</p></div>
+      <div class="cells">
+        <article class="card"><h3>表达目标与约束</h3><p>任务建议 / 输入引导 / 意图澄清</p></article>
+        <article class="card"><h3>理解计划与参与决策</h3><p>计划确认 / 进展反馈 / 异常处理</p></article>
+        <article class="card"><h3>核对并应用成果</h3><p>交付物侧边栏 / MA 业务画布</p></article>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="cells" style="grid-column:2 / -1"><div class="flow"><p>用户目标 → Agent 组织执行 → 关键节点回传人确认</p></div></div>
+    </div>
+
+    <div class="row">
+      <div class="label"><p class="tag">Agent 执行层</p><h2>内部机制</h2><p>只外露关键决策</p></div>
+      <div class="cells">
+        <article class="card soft"><h3>意图与上下文理解</h3><p>解析目标、业务规则和约束</p></article>
+        <article class="card soft"><h3>规划与协同执行</h3><p>任务规划、Agent 分工、工具调用</p></article>
+        <article class="card soft"><h3>产物生成与校验</h3><p>策略、人群及 MA 配置等业务结果</p></article>
+        <div class="harness"><h3>Agent Harness</h3><p>运行与协作框架：上下文管理、指令与 Skill、任务编排、Agent / Tool 调用、状态管理、权限约束及异常恢复。</p></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="label"><p class="tag">共性交互能力</p><h2>三类范式</h2><p>面向用户决策提炼</p></div>
+      <div class="cells">
+        <article class="card"><h3>Compose</h3><p>任务表达</p></article>
+        <article class="card"><h3>Collaborate</h3><p>协作与控制</p></article>
+        <article class="card"><h3>Artifact</h3><p>业务产物</p></article>
+      </div>
+    </div>
+
+  </section>
+</main>
+</body>
+</html>

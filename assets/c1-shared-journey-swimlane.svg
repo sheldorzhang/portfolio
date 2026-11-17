@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1120" viewBox="0 0 1920 1120" role="img" aria-labelledby="title desc">
   <title id="title">一场大促的跨角色协作泳道图</title>
-  <desc id="desc">营销活动从目标设定、人货模型、画布配置、活动上线到回收复盘，跨品牌运营、数据算法、代理团队和知识库协同；运营还需确认配置与上线交接。图下列出五类现状痛点。</desc>
+  <desc id="desc">营销活动从目标设定、人货模型、画布配置、活动上线到回收复盘，跨品牌运营、数据算法、代理团队和知识库协同；运营还需确认配置与上线交接。图下列出三类现状痛点及对应说明。</desc>
   <rect width="1920" height="1120" fill="#fafafa"/>
   <g font-family="-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif" fill="#202124">
-    <text x="96" y="92" font-size="24" font-weight="600" fill="#5b57ee">用户体验地图：现状泳道</text>
+    <text x="96" y="92" font-size="24" font-weight="600" fill="#5b57ee">跨角色现状泳道图</text>
     <text x="96" y="150" font-size="42" font-weight="700">一场大促，需要 3 个角色 × 5 个阶段协同</text>
     <text x="96" y="193" font-size="24" fill="#62646b">从目标设定到效果复盘，运营需持续确认跨角色交接；知识与规范分散在各阶段</text>
 
@@ -77,12 +77,10 @@
     <text x="120" y="988" font-size="17" font-weight="600" letter-spacing="1" fill="#bebaff">PAIN POINTS</text>
     <text x="120" y="1028" font-size="21" font-weight="650" fill="#fff">现状痛点</text>
     <g font-size="19" fill="#fff">
-      <text x="386" y="1000"><tspan fill="#bebaff" font-weight="700">01</tspan><tspan dx="12">角色间手工流转</tspan></text>
-      <text x="688" y="1000"><tspan fill="#bebaff" font-weight="700">02</tspan><tspan dx="12">需求反复对齐</tspan></text>
-      <text x="958" y="1000"><tspan fill="#bebaff" font-weight="700">03</tspan><tspan dx="12">2–3 天才上线</tspan></text>
-      <text x="1216" y="1000"><tspan fill="#bebaff" font-weight="700">04</tspan><tspan dx="12">知识 / 技能散落</tspan></text>
-      <text x="1510" y="1000"><tspan fill="#bebaff" font-weight="700">05</tspan><tspan dx="12">每场重做，复用难</tspan></text>
+      <text x="386" y="1000"><tspan fill="#bebaff" font-weight="700">01</tspan><tspan dx="12">目标重复表达</tspan></text>
+      <text x="846" y="1000"><tspan fill="#bebaff" font-weight="700">02</tspan><tspan dx="12">上下文传递断裂</tspan></text>
+      <text x="1386" y="1000"><tspan fill="#bebaff" font-weight="700">03</tspan><tspan dx="12">调整与复用成本高</tspan></text>
     </g>
-    <text x="386" y="1040" font-size="17" fill="#c9c9ce">流程走查中的交接成本与知识断点</text>
+    <text x="386" y="1040" font-size="17" fill="#c9c9ce">流程走查中的目标、上下文与复用断点</text><text x="846" y="1040" font-size="17" fill="#c9c9ce">角色间的手工流转与上下文交接</text><text x="1386" y="1040" font-size="17" fill="#c9c9ce">知识与技能散落、每场重做</text>
   </g>
 </svg>

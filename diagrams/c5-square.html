@@ -163,12 +163,17 @@ h3{margin:0;font-family:var(--fig-serif);font-weight:600}
 #summary .pair p{margin:0;color:var(--fig-ink-2);font-size:20px;line-height:1.58}
 #workflow{
   height:1080px;
-  padding:58px 80px;
-  gap:26px;
+  padding:64px 88px;
+  gap:24px;
   justify-content:center;
 }
+/* 顶部「问题 → 体系 → 工作流」与下方流程之间单独拉开 */
+#workflow > .ai-upgrade{margin-bottom:56px}
+#workflow .flow5{gap:0}
+#workflow .shots{gap:20px}
+#workflow .roles{margin-top:8px}
 #workflow .ai-upgrade{
-  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;
 }
 #workflow .ai-upgrade article{
   min-height:132px;padding:20px 24px;
@@ -278,10 +283,9 @@ h3{margin:0;font-family:var(--fig-serif);font-weight:600}
     </figure>
   </section>
   <section class="roles">
-    <article><b><span class="en">AI</span> 提供</b><span class="bits">整理信息、探索方案、检查规范</span></article>
-    <article><b>团队负责</b><span class="bits">判断优先级、做出设计取舍、对结果负责</span></article>
+    <article><b><span class="en">AI</span> 提供</b><span class="bits">以设计规范为上下文，整理信息、探索方案、检查规范</span></article>
+    <article><b>团队负责</b><span class="bits">判断优先级、做出设计取舍、对结果负责，并维护设计规范</span></article>
   </section>
-  <p class="takeaway">组件规范与页面范式成为 AI 可用的设计上下文，团队负责判断与维护。</p>
 </main>
 
 <main class="canvas" id="summary">

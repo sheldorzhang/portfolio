@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#FAFAFA;font-family:"PingFang SC","Hiragino Sans GB","Noto Sans SC",sans-serif;color:#1C1C1C}
+.canvas{position:relative;width:1920px;height:1080px}
+.canvas img{position:absolute;left:0;top:0;width:1920px;height:1080px}
+.tag{position:absolute;top:34px;display:flex;align-items:center;gap:14px}
+.tag small{font-size:15px;font-weight:600;letter-spacing:.04em;color:#8A8A8A;background:#fff;border:1px solid #E6E6E6;border-radius:999px;padding:6px 14px}
+.tag b{font-size:24px;font-weight:600}
+.tag.l{left:50%;transform:translateX(-50%);top:auto;bottom:22px}
+.tag.r{left:50%;transform:translateX(-50%);top:34px}
+.tag.r small{background:#1C1C1C;color:#fff;border-color:#1C1C1C}
+.arrow{position:absolute;left:470px;top:40px;width:auto;white-space:nowrap;display:flex;align-items:center;justify-content:center;gap:10px;font-size:16px;color:#5555EC;font-weight:600}
+.arrow::before{content:"";width:40px;flex:none;border-top:2px solid #5555EC}
+.arrow::after{content:"";flex:none;width:0;height:0;border-left:10px solid #5555EC;border-top:6px solid transparent;border-bottom:6px solid transparent}
+.note{position:absolute;left:140px;top:640px;width:1640px;display:flex;justify-content:space-between;font-size:17px;color:#5c5c5c}
+.note span{background:#fff;border:1px solid #E6E6E6;border-radius:10px;padding:10px 18px}
+.note .k{color:#1C1C1C;font-weight:600}
+
+.vline{position:absolute;left:959px;top:650px;width:0;height:360px;border-left:3px solid #5555EC}
+.vhead{position:absolute;left:951px;top:640px;width:0;height:0;border-left:9px solid transparent;border-right:9px solid transparent;border-bottom:14px solid #5555EC}
+.pill{position:absolute;left:50%;transform:translateX(-50%);background:#5555EC;color:#fff;font-size:18px;font-weight:600;padding:8px 22px;border-radius:999px;white-space:nowrap}
+.pill.bottom{top:966px}
+</style>
+</head>
+<body>
+<main class="canvas">
+  <img src="../assets/c1-shift-ref.jpg" alt="">
+  <div class="tag l"><b>功能驱动｜SaaS 管理工作台 - AI 辅助局部</b></div>
+  <div class="tag r"><b>目标驱动｜Agent 任务工作台 - 自主组织完成</b></div>
+</main>
+</body>
+</html>

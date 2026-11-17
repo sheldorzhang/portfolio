@@ -34,9 +34,9 @@ body{font-family:var(--fig-font);color:var(--fig-ink)}
   transform-origin:0 0;
 }
 .board{width:100%}
-h2{margin:0 0 64px;text-align:center;font:600 46px/1.4 var(--fig-serif)}
+h2{margin:0 0 44px;text-align:center;font:600 46px/1.4 var(--fig-serif)}
 .row{display:grid;grid-template-columns:240px minmax(0,1fr);column-gap:34px;align-items:stretch}
-.row + .row{margin-top:24px}
+.row + .row{margin-top:18px}
 .label{display:flex;align-items:center;color:var(--fig-ink-3);font-size:22px}
 .track{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
 .cell{display:flex;align-items:center;justify-content:center;min-height:126px;padding:22px 36px;text-align:center;font:600 32px/1.35 var(--fig-serif)}
@@ -48,6 +48,12 @@ h2{margin:0 0 64px;text-align:center;font:600 46px/1.4 var(--fig-serif)}
 .pat{min-height:210px;flex-direction:column;align-items:flex-start;justify-content:center;text-align:left;background:#fff;border:1px solid var(--fig-ink);padding:28px 32px}
 .pat b{font:600 30px/1.35 var(--fig-serif)}
 .pat span{margin-top:12px;color:var(--fig-ink-2);font-family:var(--fig-font);font-size:21px;font-weight:400;line-height:1.45}
+.spec{margin-top:28px;display:grid;grid-template-columns:240px minmax(0,1fr);column-gap:34px;align-items:stretch}
+.spec-label{display:flex;align-items:center;color:var(--fig-ink-3);font-size:22px}
+.spec-body{background:var(--fig-ink);color:#fff;border-radius:0;padding:26px 36px;display:flex;flex-direction:column;justify-content:center;gap:10px}
+.spec-body small{font-family:var(--fig-font);font-size:20px;color:rgba(255,255,255,.62)}
+.spec-body b{font:600 32px/1.35 var(--fig-serif)}
+.spec-body span{font-family:var(--fig-font);font-size:21px;line-height:1.5;color:rgba(255,255,255,.82)}
 </style>
 </head>
 <body>
@@ -85,6 +91,14 @@ h2{margin:0 0 64px;text-align:center;font:600 46px/1.4 var(--fig-serif)}
         <div class="cell pat"><b>计划逐步可见</b><span>理解与结果逐步确认</span></div>
         <div class="cell pat"><b>关键决策可控</b><span>只外露关键判断，支持修改与确认</span></div>
         <div class="cell pat"><b>经验可复用</b><span>验收后进入执行或下一轮使用</span></div>
+      </div>
+    </div>
+    <div class="spec">
+      <div class="spec-label">Agent 设计规范</div>
+      <div class="spec-body">
+        <small>从营销活动策划、策略库与工作台洞察中提炼</small>
+        <b>Agent 自主执行，人只在关键决策处介入</b>
+        <span>目标与约束由人定义，过程只外露关键节点，结果经人验收后才进入业务执行。</span>
       </div>
     </div>
   </div>
